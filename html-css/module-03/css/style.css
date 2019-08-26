@@ -15,10 +15,18 @@ body {
   color: rgb(98, 98, 98);
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   width: 900px;
   margin: 0 auto;
 }
+
+/* ----NAVIGATION STYLE---- */
 
 .navigation {
   width: 580px;
@@ -42,6 +50,7 @@ body {
 }
 
 .navigation-list-link {
+  display: block;
   font-family: "Playfair Display", sans-serif;
   font-style: 14px;
   color: rgb(98, 98, 98);
@@ -56,4 +65,70 @@ body {
 .navigation-list-link:hover,
 .navigation-list-link:focus {
   color: rgb(3, 169, 244);
+}
+
+/* ----MAIN STYLE---- */
+
+.lifestyle,
+.photodiary {
+  margin-bottom: 130px;
+}
+
+.lifestyle-list,
+.photodiary-list,
+.music-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.lifestyle-item,
+.photodiary-item,
+.music-item {
+  display: inline-block;
+  width: 420px;
+  margin-right: 60px;
+}
+
+.lifestyle-item:last-child,
+.photodiary-item:last-child,
+.music-item:last-child {
+  margin-right: 0;
+}
+
+.lifestyle-name,
+.photodiary-name,
+.music-name{
+  margin-top: 30px;
+  margin-bottom: 26px;
+  font-size: 14px;
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(180, 173, 158);
+  line-height: 17px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.lifestyle-title,
+.photodiary-title,
+.music-title {
+  margin-bottom: 32px;
+  font-size: 30px;
+  font-family: "Playfair Display", sans-serif;
+  color: rgb(98, 98, 98);
+  line-height: 36px;
+}
+
+.lifesyle-descr,
+.photodiary-descr,
+.music-descr {
+  font-size: 14px;
+  font-family: "Playfair Display", sans-serif;
+  color: rgb(98, 98, 98);
+  line-height: 24px;
+}
+
+.music {
+  margin-bottom: 50px;
 }
