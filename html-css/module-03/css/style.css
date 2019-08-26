@@ -26,6 +26,12 @@ img {
   margin: 0 auto;
 }
 
+.section-picture {
+  width: 420px;
+  height: 280px;
+  background-color: rgb(242, 242, 242);
+}
+
 /* ----NAVIGATION STYLE---- */
 
 .navigation {
@@ -132,3 +138,18 @@ img {
 .music {
   margin-bottom: 50px;
 }
+
+/* ----BUTTON STYLE---- */
+
+.button-footer {
+  display: block;
+  width: 160px;
+  height: 60px;
+  margin: 0 auto 70px;
+  font-size: 20px;
+  font-family: "Playfair Display", sans-serif;
+  color: rgb(98, 98, 98);
+  background-color: transparent;
+  border: 1px solid rgb(98, 98, 98);
+}
+
