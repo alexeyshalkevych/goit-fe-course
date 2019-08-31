@@ -35,19 +35,20 @@ img {
 /* ----NAVIGATION STYLE---- */
 
 .navigation {
-  width: 580px;
-  margin: 72px auto 100px;
+  padding-top: 72px;
+  padding-bottom: 100px;
+  text-align: center;
 }
 
 .navigation-list {
   margin: 0;
   padding: 0;
   list-style: none;
+  font-size: 0;
 }
 
 .navigation-list-item {
   display: inline-block;
-  padding: 0;
   margin-right: 104px;
 }
 
@@ -58,7 +59,7 @@ img {
 .navigation-list-link {
   display: block;
   font-family: "Playfair Display", sans-serif;
-  font-style: 14px;
+  font-size: 14px;
   color: rgb(98, 98, 98);
   text-transform: uppercase;
   text-decoration: none;
@@ -73,41 +74,36 @@ img {
   color: rgb(3, 169, 244);
 }
 
-/* ----MAIN STYLE---- */
+/* ----SECTION CARDS STYLE---- */
 
-.lifestyle,
-.photodiary {
-  margin-bottom: 130px;
-}
-
-.lifestyle-list,
-.photodiary-list,
-.music-list {
+.cards-list {
   margin: 0;
   padding: 0;
   list-style: none;
   font-size: 0;
 }
 
-.lifestyle-item,
-.photodiary-item,
-.music-item {
+.cards-item {
   display: inline-block;
   width: 420px;
   margin-right: 60px;
+  margin-bottom: 130px;
 }
 
-.lifestyle-item:last-child,
-.photodiary-item:last-child,
-.music-item:last-child {
+.cards-item:nth-child(2n) {
   margin-right: 0;
 }
 
-.lifestyle-name,
-.photodiary-name,
-.music-name{
-  margin-top: 30px;
-  margin-bottom: 26px;
+.cards-item:nth-last-child(-n + 2) {
+  margin-bottom: 50px;
+}
+
+.cards-picture {
+  margin-bottom: 30px;
+}
+
+.cards-name {
+  margin: 0 0 26px 0;
   font-size: 14px;
   font-family: "Ubuntu", sans-serif;
   color: rgb(180, 173, 158);
@@ -116,32 +112,25 @@ img {
   text-transform: uppercase;
 }
 
-.lifestyle-title,
-.photodiary-title,
-.music-title {
-  margin-bottom: 32px;
+.cards-title {
+  margin: 0 0 32px 0;
   font-size: 30px;
   font-family: "Playfair Display", sans-serif;
   color: rgb(98, 98, 98);
   line-height: 36px;
 }
 
-.lifesyle-descr,
-.photodiary-descr,
-.music-descr {
+.cards-descr {
+  margin: 0;
   font-size: 14px;
   font-family: "Playfair Display", sans-serif;
   color: rgb(98, 98, 98);
   line-height: 24px;
 }
 
-.music {
-  margin-bottom: 50px;
-}
-
 /* ----BUTTON STYLE---- */
 
-.button-footer {
+.button {
   display: block;
   width: 160px;
   height: 60px;
@@ -153,3 +142,8 @@ img {
   border: 1px solid rgb(98, 98, 98);
 }
 
+.button:hover,
+.button:focus {
+  background-color: rgb(3, 169, 244);
+  color: rgb(242, 242, 242);
+}
