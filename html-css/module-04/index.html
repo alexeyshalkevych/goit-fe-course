@@ -4,18 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Module-04</title>
   </head>
   <body>
     <!------HEADER------>
-    <header class="header">
-      <div class="logo"><a href="#" class="logo-link">mart</a></div>
-      <nav class="navigation">
-        <ul class="menu-list">
+    <header class="header container">
+      <nav class="navigation clearfix">
+        <div class="logo">
+          <a href="#" class="logo-link">mart</a>
+        </div>
+        <ul class="menu-list clearfix">
           <li class="menu-list-item">
-            <a href="#" class="menu-list-link">home</a>
+            <a href="#" class="menu-list-link active">home</a>
           </li>
           <li class="menu-list-item">
             <a href="#" class="menu-list-link">about us</a>
@@ -38,8 +48,8 @@
 
     <main class="content">
       <!------SECTION GALLERY------>
-      <section class="gallery">
-        <h2 class="gallery-section-title">featured products</h2>
+      <section class="gallery container">
+        <h2 class="gallery-section-title section-title shape">featured products</h2>
         <ul class="gallery-list">
           <li class="gallery item">
             <img
@@ -133,7 +143,7 @@
       </section>
 
       <!------SECTION GALLERY------>
-      <section class="blog">
+      <section class="blog container">
         <h2 class="blog-section-title">latest news</h2>
         <ul class="blog-list">
           <li class="blog-list-item">
