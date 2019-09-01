@@ -7,6 +7,8 @@ html {
 *::after {
   box-sizing: inherit;
 }
+	
+
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -34,6 +36,7 @@ img {
 
 .section-title {
   margin: 0;
+  margin-bottom: 92px;
   padding: 0;
   font-family: "Roboto", sans-serif;
   color: rgb(81, 81, 81);
@@ -47,7 +50,7 @@ img {
 .shape::after {
   display: block;
   content: "";
-  margin: 34px auto 92px;
+  margin: 34px auto 0;
   width: 164px;
   height: 7px;
   background-color: rgb(26, 188, 156);
@@ -55,8 +58,12 @@ img {
 
 /* -----HEADER STYLE----- */
 
-.logo-link {
+.logo {
   float: left;
+}
+
+.logo-link {
+  display: block;
   font-family: "Roboto", sans-serif;
   color: rgb(85, 82, 82);
   font-size: 30px;
@@ -78,7 +85,7 @@ img {
 
 .menu-list {
   float: right;
-  width: 476px;
+  min-width: 476px;
   margin: 0;
   margin-top: 10px;
   padding: 0;
@@ -152,7 +159,7 @@ img {
   background-color: rgb(127, 217, 199);
 }
 
-.gallery-list-item:nth-child(4n) {
+.gallery-list-item:nth-of-type(4n) {
   margin-right: 0;
 }
 
@@ -273,16 +280,22 @@ img {
 }
 
 .blog-item-button {
+  display: block;
   width: 160px;
-  height: 52px;
+  padding: 12px 0;
   background-color: rgb(78, 198, 171);
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 300;
+  text-align: center;
   color: rgb(255, 255, 255);
-  border: none;
   border-radius: 3px;
+  text-decoration: none;
 }
+
 
 .blog-item-button:hover,
 .blog-item-button:focus {
-  cursor: pointer;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.39);
 }
