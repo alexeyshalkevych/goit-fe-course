@@ -133,7 +133,6 @@ img {
 .gallery-list-item {
   float: left;
   width: 255px;
-  height: 322px;
   margin-right: 30px;
   margin-bottom: 30px;
   background-color: rgb(232, 239, 252);
@@ -141,16 +140,6 @@ img {
 
 .gallery-list-item:hover {
   background-color: rgb(26, 188, 156);
-}
-
-.Rectangle_51 {
-  background-color: rgb(26, 188, 156);
-  position: absolute;
-  left: 547px;
-  top: 963px;
-  width: 255px;
-  height: 40px;
-  z-index: 86;
 }
 
 .gallery-list-item:nth-child(4n) {
@@ -164,6 +153,47 @@ img {
 .gallery-picture {
   margin: 0 auto;
 }
+
+.gallery-picture-first {
+  margin-bottom: 11px;
+}
+
+.gallery-picture-second {
+  margin-top: 18px;
+  margin-bottom: 10px;
+}
+
+.gallery-picture-third {
+  margin-top: 70px;
+  margin-bottom: 46px;
+}
+
+.gallery-picture-fourth {
+  margin-top: 38px;
+  margin-bottom: 32px;
+}
+
+.gallery-picture-fifth {
+  margin-top: 13px;
+  margin-bottom: 48px;
+}
+
+.gallery-picture-sixth {
+  margin-top: 47px;
+  margin-bottom: 47px;
+}
+
+.gallery-picture-seventh {
+  margin-top: 16px;
+  margin-bottom: 18px;
+}
+
+.gallery-picture-eighth {
+  margin-top: 94px;
+  margin-bottom: 82px;
+}
+
+
 
 .product-name {
   float: left;
