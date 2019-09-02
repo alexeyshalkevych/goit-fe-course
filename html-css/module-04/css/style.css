@@ -7,8 +7,6 @@ html {
 *::after {
   box-sizing: inherit;
 }
-	
-
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -171,7 +169,15 @@ img {
   margin: 0 auto;
 }
 
-.gallery-picture-first {
+.picture-box {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 255px;
+  height: 284px;
+}
+
+/* .gallery-picture-first {
   margin-bottom: 11px;
 }
 
@@ -208,7 +214,7 @@ img {
 .gallery-picture-eighth {
   margin-top: 94px;
   margin-bottom: 82px;
-}
+} */
 
 .product-name {
   float: left;
@@ -293,7 +299,6 @@ img {
   border-radius: 3px;
   text-decoration: none;
 }
-
 
 .blog-item-button:hover,
 .blog-item-button:focus {
