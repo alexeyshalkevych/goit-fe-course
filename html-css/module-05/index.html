@@ -13,6 +13,10 @@
       href="https://fonts.googleapis.com/css?family=Roboto:300,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Module-05</title>
   </head>
@@ -48,12 +52,18 @@
       </div>
     </header>
     <div class="slider">
+      <div class="slider-content container">
         <h2 class="slider-title"><span>affordable</span> paris tours</h2>
         <span class="slider-subtitle">city tours</span>
         <span class="slider-subtitle">tour tickets</span>
         <span class="slider-subtitle">tour guides</span>
-        <span class="left-arrow"></span>
-        <span class="right-arrow"></span>
+        <button class="slider-button button-prev">
+          <i class="pe-7s-angle-left"></i>
+        </button>
+        <button class="slider-button button-next">
+          <i class="pe-7s-angle-right"></i>
+        </button>
+      </div>
     </div>
     <main class="content">
       <!------SECTION COLLECTION------>
@@ -64,6 +74,14 @@
           </h2>
           <ul class="collection-card-list clearfix">
             <li class="collection-card-list-item">
+              <div class="cards-content">
+                <ul class="list-card-social">
+                  <li class="card-social-item"><a href="#"><i class="pe-7s-like"></i></a></li>
+                  <li class="card-social-item"><a href="#"><i class="pe-7s-repeat"></i></a></li>
+                  <li class="card-social-item"><a href="#"><i class="pe-7s-clock"></i></a></li>
+                </ul>
+                <a href="#" class="card-basket"><i class="pe-7s-cart"></i>add to cart</a>
+              </div>
               <div class="photo-box">
                 <img
                   src="img/collection-photo-card-1.png"
@@ -77,6 +95,14 @@
               <p class="product-price">26</p>
             </li>
             <li class="collection-card-list-item">
+                <div class="cards-content">
+                    <ul class="list-card-social">
+                      <li class="card-social-item"><a href="#"><i class="pe-7s-like"></i></a></li>
+                      <li class="card-social-item"><a href="#"><i class="pe-7s-repeat"></i></a></li>
+                      <li class="card-social-item"><a href="#"><i class="pe-7s-clock"></i></a></li>
+                    </ul>
+                    <a href="#" class="card-basket"><i class="pe-7s-cart"></i>add to cart</a>
+                  </div>
               <div class="photo-box">
                 <img
                   src="img/collection-photo-card-2.png"
