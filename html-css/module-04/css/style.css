@@ -169,6 +169,8 @@ img {
   margin: 0 auto;
 }
 
+/* ----PICTURE BOX---- */
+
 .picture-box {
   display: table-cell;
   vertical-align: middle;
