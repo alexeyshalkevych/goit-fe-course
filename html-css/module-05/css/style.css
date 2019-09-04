@@ -140,13 +140,13 @@ img {
   padding: 206px 0 260px;
   font-family: "Roboto", sans-serif;
   color: rgb(255, 255, 255);
-  text-align: center;
   text-transform: uppercase;
 }
 
 .slider-title {
   margin: 0;
   padding: 0;
+  text-align: center;
   font-size: 60px;
   line-height: 82px;
   font-weight: 900;
@@ -158,13 +158,16 @@ img {
 
 .slider-subtitle {
   margin: 0;
-  padding: 0;
   font-size: 24px;
   line-height: 54px;
   font-weight: 300;
 }
 
-.slider-subtitle:not(:last-child)::after {
+.position {
+  padding-left: 170px;
+}
+
+.segregator::after {
   content: " /";
 }
 .slider-button {
@@ -312,7 +315,7 @@ img {
 .list-card-social {
   position: absolute;
   left: 36px;
-  top: 116px;
+  top: 106px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -348,7 +351,7 @@ img {
 .card-basket {
   position: absolute;
   left: 36px;
-  bottom: 75px;
+  bottom: 85px;
   width: 166px;
   height: 50px;
   padding: 6px 0;
@@ -373,4 +376,26 @@ img {
   vertical-align: middle;
 }
 
+/* ----FOOTER STYLE---- */
 
+.footer {
+  color: rgb(255, 255, 255);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  padding: 38px 0 34px;
+  background-color: rgb(50, 50, 50);
+}
+
+.footer-copyright::after {
+  content: " \00a9";
+}
+
+.footer-design::before {
+  content: "\007c  ";
+}
+
+.footer-design-color {
+  color: rgb(70, 191, 169);
+}
