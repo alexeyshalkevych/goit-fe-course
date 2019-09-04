@@ -220,16 +220,26 @@ img {
   background-color: rgb(232, 239, 252);
 }
 
-.collection-card-list-item:hover .cards-content{
+.collection-card-list-item:hover {
+  box-shadow: 2px -2px 6px rgba(0, 0, 0, 0.549),
+    -2px 2px 6px rgba(0, 0, 0, 0.549);
+
+  transition: 1.5s;
+}
+
+.collection-card-list-item:hover .cards-content {
+  transition: 1.5s;
   opacity: 1;
 }
 
 .collection-card-list-item:hover .product-name {
   background-color: rgb(26, 188, 156);
+  transition: 1.1s;
 }
 
 .collection-card-list-item:hover .product-price {
   background-color: rgb(127, 217, 199);
+  transition: 1.1s;
 }
 
 .collection-card-list-item:nth-of-type(4n) {
@@ -238,6 +248,14 @@ img {
 
 .collection-card-list-item:nth-last-child(-n + 4) {
   margin-bottom: 0;
+}
+
+.photo-box {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 255px;
+  height: 284px;
 }
 
 .product-name {
@@ -265,39 +283,44 @@ img {
 
 .cards-content {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 235px;
-  height: 301px;
+  width: 236px;
+  height: 300px;
   background-color: rgba(0, 0, 0, 0.549);
   opacity: 0;
 }
 
-/* .cards-content:hover {
-  position: absolute;
+.first-card-content {
   top: 10px;
   left: 10px;
-  width: 235px;
-  height: 301px;
-  background-color: rgba(0, 0, 0, 0.549);
-} */
+}
 
+.second-card-content {
+  top: 10px;
+  left: 295px;
+}
+
+.third-card-content {
+  top: 10px;
+  left: 580px;
+}
+
+.fourth-card-content {
+  top: 10px;
+  left: 865px;
+}
 
 .list-card-social {
   position: absolute;
   left: 36px;
-  top: 120px;
+  top: 116px;
   margin: 0;
   padding: 0;
   list-style: none;
-  color: black;
 }
 
 .card-social-item {
   float: left;
-  padding: 8px;
-  margin-right: 10px;
-  list-style: none;
+  margin-right: 8px;
   font-size: 30px;
   color: rgb(255, 255, 255);
   border: 1px solid rgb(255, 255, 255);
@@ -306,12 +329,19 @@ img {
   text-align: center;
 }
 
-.card-social-item:hover {
-  background-color: rgb(50, 50, 50);
+.card-social-item:last-child {
+  margin-right: 0;
 }
 
-.card-social-item a {
+.card-social-item:hover {
+  background-color: rgb(26, 188, 156);
+}
+
+.card-social-item-link {
+  display: block;
+  padding: 8px 6px 6px;
   font-size: 30px;
+  line-height: 32px;
   color: rgb(255, 255, 255);
 }
 
@@ -319,7 +349,7 @@ img {
   position: absolute;
   left: 36px;
   bottom: 75px;
-  width: 170px;
+  width: 166px;
   height: 50px;
   padding: 6px 0;
   font-family: "Open Sans", sans-serif;
@@ -337,8 +367,10 @@ img {
   background-color: rgb(50, 50, 50);
 }
 
-.card-basket > i {
+.basket-icon {
   padding-right: 10px;
   font-size: 30px;
   vertical-align: middle;
 }
+
+
