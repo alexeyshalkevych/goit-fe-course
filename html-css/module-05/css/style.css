@@ -143,10 +143,12 @@ img {
   text-transform: uppercase;
 }
 
-.slider-content-title-box {
+.slider-content-list {
   width: 738px;
   margin: 0 auto;
+  padding: 0;
   text-align: left;
+  list-style: none;
 }
 
 .slider-title {
@@ -155,22 +157,28 @@ img {
   line-height: 82px;
   font-weight: 900;
   letter-spacing: -1.2px;
-}
-
-.slider-title span {
-  color: rgb(255, 114, 0);
+  text-shadow: 0 0 1px rgb(255, 255, 255), 0 0 3px rgb(255, 255, 255),
+    0 0 5px rgb(255, 255, 255);
 }
 
 .slider-subtitle {
   margin: 0;
+  padding: 0;
   font-size: 24px;
   line-height: 54px;
   font-weight: 300;
+  text-shadow: 0 0 1px rgb(255, 255, 255), 0 0 2px rgb(255, 255, 255),
+    0 0 3px rgb(255, 255, 255);
 }
 
-.segregator::after {
+.separator::before {
+  content: "/ ";
+}
+
+.separator::after {
   content: " /";
 }
+
 .slider-button {
   width: 104px;
   height: 104px;
@@ -255,10 +263,10 @@ img {
 
 .photo-box {
   display: table-cell;
-  vertical-align: middle;
-  text-align: center;
   width: 255px;
   height: 284px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .product-name {
@@ -271,8 +279,8 @@ img {
 
 .product-price {
   float: right;
-  margin: 0;
   width: 55px;
+  margin: 0;
   padding: 8px 0;
   background-color: rgb(140, 140, 140);
   text-align: center;
@@ -310,12 +318,11 @@ img {
 
 .card-social-item {
   float: left;
+  width: 50px;
+  height: 50px;
   margin-right: 8px;
   font-size: 30px;
   color: rgb(255, 255, 255);
-  border: 1px solid rgb(255, 255, 255);
-  width: 50px;
-  height: 50px;
   text-align: center;
 }
 
@@ -323,37 +330,46 @@ img {
   margin-right: 0;
 }
 
-.card-social-item:hover {
-  background-color: rgb(26, 188, 156);
-}
-
 .card-social-item-link {
   display: block;
-  padding: 8px 6px 6px;
+  width: 50px;
+  height: 50px;
   font-size: 30px;
   line-height: 32px;
   color: rgb(255, 255, 255);
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  outline: none;
+  cursor: pointer;
+}
+
+.card-social-item-link:hover,
+.card-social-item-link:focus {
+  background-color: rgb(26, 188, 156);
 }
 
 .card-basket {
   position: absolute;
   left: 36px;
   bottom: 70px;
+  display: block;
   width: 166px;
   height: 50px;
-  padding: 6px 0;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 32px;
   text-align: center;
-  vertical-align: middle;
   color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  background-color: transparent;
   text-transform: uppercase;
   text-decoration: none;
-  border: 1px solid rgb(255, 255, 255);
+  outline: none;
+  cursor: pointer;
 }
 
-.card-basket:hover {
+.card-basket:hover,
+.card-basket:focus {
   background-color: rgb(50, 50, 50);
 }
 
@@ -366,23 +382,46 @@ img {
 /* ----FOOTER STYLE---- */
 
 .footer {
-  color: rgb(255, 255, 255);
+  padding: 38px 0 34px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 28px;
+  color: rgb(255, 255, 255);
   text-align: center;
-  padding: 38px 0 34px;
   background-color: rgb(50, 50, 50);
 }
 
-.footer-copyright::after {
-  content: " \00a9";
+.contact {
+  width: 410px;
+  margin: 0 auto;
 }
 
-.footer-design::before {
-  content: "\007c  ";
+.copyright {
+  float: left;
+  margin: 0;
+  line-height: 28px;
+  text-transform: capitalize;
 }
 
-.footer-design-color {
+.copyright-symbol::after {
+  content:" \00a9";
+}
+
+.copyright::after {
+  content: "\007c";
+}
+
+.design {
+  float: left;
+  display: block;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(254, 254, 254);
+  line-height: 28px;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.design-color-effects {
   color: rgb(70, 191, 169);
 }
