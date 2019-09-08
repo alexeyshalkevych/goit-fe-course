@@ -42,7 +42,7 @@ img {
 
 .section-title {
   margin: 0;
-  margin-bottom: 108px;
+  margin-bottom: 46px;
   padding: 0;
   font-family: "Montserrat", sans-serif;
   color: rgb(51, 51, 51);
@@ -60,6 +60,17 @@ img {
   width: 60px;
   height: 3px;
   background-color: rgb(243, 129, 129);
+}
+
+.list-item-title {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
 }
 
 /* -----HEADER STYLE----- */
@@ -188,7 +199,6 @@ img {
 .icon-service-css-html::before {
   height: 31px;
   background-image: url(../img/service-icons/service-css-html.png);
-
 }
 
 .icon-service-digital::before {
@@ -197,19 +207,54 @@ img {
 }
 
 .services-item-title {
-  margin: 0;
   margin-bottom: 15px;
-  padding: 0;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  line-height: 17px;
-  font-weight: 400;
-  color: rgb(51, 51, 51);
-  text-transform: uppercase;
 }
 
 .services-item-title-descr {
   margin: 0;
   margin-bottom: 96px;
   padding: 0;
+}
+
+/* -----TEAM SECTION STYLE----- */
+
+.team {
+  padding-top: 94px;
+}
+
+.team-section-description {
+  margin: 0;
+  margin-bottom: 90px;
+  padding: 0 130px;
+  text-align: center;
+}
+
+.team-content-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.team-content-list-item {
+  flex-basis: 382px;
+}
+
+.team-picture {
+  margin-bottom: 28px;
+}
+
+.team-item-name {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.team-item-profession {
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+  text-align: center;
+  text-transform: capitalize;
 }
