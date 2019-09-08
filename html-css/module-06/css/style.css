@@ -6,7 +6,6 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  /* outline: 1px solid teal; */
 }
 
 body {
@@ -76,7 +75,6 @@ img {
 
 .header {
   padding-top: 25px;
-  padding-bottom: 126px;
 }
 
 .navigation {
@@ -118,6 +116,7 @@ img {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  transition: color 200ms linear;
 }
 
 .menu-list-link:hover,
@@ -149,6 +148,10 @@ img {
 }
 
 /* -----SERVICES SECTION STYLE----- */
+
+.services {
+  padding-top: 96px;
+}
 
 .services-section-title {
   margin-bottom: 106px;
@@ -248,6 +251,7 @@ img {
 
 .team-content-list-item {
   position: relative;
+  transition: box-shadow 200ms linear;
 }
 
 .team-content-list-item:hover {
@@ -256,12 +260,10 @@ img {
     -5px 5px 10px rgba(153, 153, 153, 0.5),
     5px -5px 10px rgba(153, 153, 153, 0.5);
   border-radius: 5px;
-  transition: linear 200ms;
 }
 
 .team-content-list-item:hover .team-hover-content {
   opacity: 1;
-  transition: linear 200ms;
 }
 
 .team-picture {
@@ -270,7 +272,6 @@ img {
 
 .team-content-list-item:hover .background-team-picture {
   opacity: 1;
-  transition: linear 200ms;
 }
 
 .team-item-name {
@@ -296,6 +297,7 @@ img {
   width: 380px;
   height: 470px;
   opacity: 0;
+  transition: opacity 200ms linear;
 }
 
 .background-team-picture {
@@ -307,6 +309,7 @@ img {
   height: 470px;
   background-color: rgb(149, 225, 211);
   opacity: 0;
+  transition: opacity 200ms linear;
 }
 
 .team-matthew {
@@ -361,6 +364,7 @@ img {
   height: 56px;
   background-color: rgb(252, 227, 138);
   border: none;
+  transition: background-color 200ms linear;
 }
 
 .hover-list-item-button:hover,
@@ -478,6 +482,8 @@ img {
   background-color: rgb(149, 225, 211);
   border: none;
   text-transform: uppercase;
+  transition: color 200ms linear, background-color 200ms linear,
+    box-shadow 200ms linear, text-shadow 200ms linear;
 }
 
 .subscribe:hover {
@@ -486,6 +492,5 @@ img {
   background-color: rgb(243, 129, 129);
   box-shadow: 0 0 5px rgb(243, 129, 129), 0 0 10px rgb(243, 129, 129),
     0 0 15px rgb(243, 129, 129);
-  transition: linear 200ms;
   cursor: pointer;
 }
