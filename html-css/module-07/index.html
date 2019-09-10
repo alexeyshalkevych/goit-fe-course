@@ -79,16 +79,42 @@
             Proin iaculis purus consequat sem cure.
           </p>
           <form action="#" class="contact-form" method="GET">
-            <input type="text" name="name" placeholder="your Name *" />
-            <input type="email" name="email" placeholder="your e-mail *" />
-            <input type="text" name="subject" placeholder="subject" />
-            <textarea
-              name="message"
-              cols="30"
-              rows="10"
-              placeholder="Your message *"
-            ></textarea>
-            <input type="submit" name="button-submit" value="send message" />
+            <div class="input-box">
+                <input
+                class="field contact-form-input required"
+                type="text"
+                name="name"
+                placeholder="your Name *"
+              />
+              <input
+                class="field contact-form-input email required"
+                type="email"
+                name="email"
+                placeholder="your e-mail *"
+              />
+              <input
+                class="field contact-form-input"
+                type="text"
+                name="subject"
+                placeholder="subject"
+              />
+            </div>
+            <div class="text-message-box">
+                <textarea
+                class="field contact-form-textarea required"
+                name="message"
+                cols="30"
+                rows="10"
+                placeholder="Your message *"
+              ></textarea>
+            </div>
+            
+            <input
+              class="contact-form-button"
+              type="submit"
+              name="button-submit"
+              value="send message"
+            />
           </form>
         </div>
       </section>

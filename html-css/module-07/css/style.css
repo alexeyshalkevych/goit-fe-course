@@ -3,6 +3,7 @@
   --font-subtitle: "Droid Serif";
   --color-content: rgb(34, 34, 34);
   --color-subcontent: rgb(119, 119, 119);
+  --color-style: rgb(254, 209, 54);
 }
 
 html {
@@ -40,7 +41,7 @@ body {
 
 .section-subtitle {
   margin: 0;
-  margin-bottom: 76px;
+  margin-bottom: 78px;
   padding: 0;
   font-family: var(--font-subtitle);
   font-size: 16px;
@@ -56,7 +57,6 @@ body {
 .header {
   padding-top: 25px;
   min-height: 100px;
-  background-color: teal;
 }
 
 .navigattion {
@@ -71,7 +71,7 @@ body {
 .logo-link {
   display: block;
   font-family: "Wisdom Script AI";
-  color: rgb(254, 209, 54);
+  color: var(--color-style);
   font-size: 26px;
   line-height: 41px;
   font-weight: 400;
@@ -103,10 +103,10 @@ body {
 
 .menu-list-link:hover,
 .menu-list-link:focus {
-  color: rgb(254, 209, 54);
+  color: var(--color-style);
 }
 
-/* -----SERVICES SECTION STYLE */
+/* -----SERVICES SECTION STYLE----- */
 
 .services {
   padding-top: 94px;
@@ -125,9 +125,20 @@ body {
 .services-list-item {
   flex-basis: 290px;
   margin-bottom: 120px;
+  animation: top-bot 3s linear;
 }
 
-.services-list-item::before{
+@keyframes top-bot {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.services-list-item::before {
   display: inline-block;
   content: "";
   width: 72px;
@@ -135,20 +146,20 @@ body {
   background-color: rgb(255, 255, 255);
   background-repeat: no-repeat;
   background-position: center center;
-  border:3px solid rgb(254, 209, 54);
+  border: 3px solid var(--color-style);
   border-radius: 50%;
   text-align: center;
 }
 
-.services-list-item:first-child::before{
+.services-list-item:first-child::before {
   background-image: url("../img/secrvices-icons/icon-basket.png");
 }
 
-.services-list-item:nth-child(2)::before{
+.services-list-item:nth-child(2)::before {
   background-image: url("../img/secrvices-icons/icon-laptop.png");
 }
 
-.services-list-item:last-child::before{
+.services-list-item:last-child::before {
   background-image: url("../img/secrvices-icons/icon-locked.png");
 }
 
@@ -168,17 +179,119 @@ body {
   color: var(--color-subcontent);
 }
 
+/* -----CONTACT SECTION STYLE----- */
 
+.contact {
+  padding-top: 88px;
+  padding-bottom: 88px;
+  background-color: var(--color-content);
+  background-image: url("../img/contact-map-image.png");
+  background-repeat: no-repeat;
+  background-position: 100% 90%;
+}
 
+.contact-title {
+  color: rgb(255, 255, 255);
+}
 
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  animation: left-right 3s linear;
+}
+
+@keyframes left-right {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-message-box {
+  display: flex;
+}
+
+.field {
+  margin-bottom: 30px;
+  width: 455px;
+  font-weight: 700;
+  color: rgb(187, 187, 187);
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 3px;
+}
+
+.contact-form-input {
+  height: 50px;
+  padding: 20px 0 20px 20px;
+}
+
+.contact-form-input::placeholder,
+.contact-form-textarea::placeholder {
+  color: rgb(187, 187, 187);
+  text-transform: uppercase;
+}
+
+/* -----VALID FIELD----- */
+
+.required:valid:focus {
+  outline: 2px solid rgb(19, 175, 19);
+}
+
+/* -----INVALID FIELD----- */
+
+.required:invalid:focus {
+  outline: 2px solid rgb(rgb(221, 46, 46));
+}
+
+.contact-form-textarea {
+  height: 210px;
+  padding: 20px 0 0 20px;
+  resize: none;
+}
+
+.contact-form-button {
+  margin: 0 auto;
+  width: 240px;
+  height: 66px;
+  background-color: var(--color-style);
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  transition: color 200ms linear, background-color 200ms linear,
+    box-shadow 200ms linear;
+}
+
+.contact-form-button:hover,
+.contact-form-button:focus {
+  color: var(--color-style);
+  background-color: teal;
+  box-shadow: 0 0 10px 0 teal, 0 0 20px 0 teal, 0 0 30px 0 teal, 0 0 40px 0 teal;
+}
+
+/* -----VISUALLY HIDDEN----- */
 
 .visually-hidden {
-	position: absolute !important;
-	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-	clip: rect(1px, 1px, 1px, 1px);
-	padding:0 !important;
-	border:0 !important;
-	height: 1px !important; 
-	width: 1px !important; 
-	overflow: hidden;
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
