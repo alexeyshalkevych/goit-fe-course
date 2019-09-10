@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Droid Serif";
-  src: url("../fonts/DroidSerifItalic.woff2") format("woff2"),
-    url("../fonts/DroidSerifItalic.woff") format("woff");
+  src: url("../fonts/droid-serif-italic.woff2") format("woff2"),
+    url("../fonts/droid-serif-italic.woff") format("woff");
   font-weight: 400;
   font-style: italic;
 }

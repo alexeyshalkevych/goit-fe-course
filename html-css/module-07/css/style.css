@@ -1,3 +1,184 @@
+:root {
+  --font-all-content: "Montserrat";
+  --font-subtitle: "Droid Serif";
+  --color-content: rgb(34, 34, 34);
+  --color-subcontent: rgb(119, 119, 119);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
-  font-family: "Wisdom Script";
+  font-family: var(--font-all-content), sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color-content);
+  line-height: 17px;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.section-title {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  line-height: 75px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section-subtitle {
+  margin: 0;
+  margin-bottom: 76px;
+  padding: 0;
+  font-family: var(--font-subtitle);
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--color-subcontent);
+  line-height: 20px;
+  text-align: center;
+}
+
+/* -----HEADER STYLE----- */
+
+.header {
+  padding-top: 25px;
+  min-height: 100px;
+  background-color: teal;
+}
+
+.navigattion {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.logo {
+}
+
+.logo-link {
+  display: block;
+  font-family: "Wisdom Script AI";
+  color: rgb(254, 209, 54);
+  font-size: 26px;
+  line-height: 41px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 485px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-list-item {
+}
+
+.menu-list-link {
+  font-family: var(--font-all-content), sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 41px;
+  color: var(--color-content);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 200ms linear;
+}
+
+.menu-list-link:hover,
+.menu-list-link:focus {
+  color: rgb(254, 209, 54);
+}
+
+/* -----SERVICES SECTION STYLE */
+
+.services {
+  padding-top: 94px;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+}
+
+.services-list-item {
+  flex-basis: 290px;
+  margin-bottom: 120px;
+}
+
+.services-list-item::before{
+  display: inline-block;
+  content: "";
+  width: 72px;
+  height: 71px;
+  background-color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border:3px solid rgb(254, 209, 54);
+  border-radius: 50%;
+  text-align: center;
+}
+
+.services-list-item:first-child::before{
+  background-image: url("../img/secrvices-icons/icon-basket.png");
+}
+
+.services-list-item:nth-child(2)::before{
+  background-image: url("../img/secrvices-icons/icon-laptop.png");
+}
+
+.services-list-item:last-child::before{
+  background-image: url("../img/secrvices-icons/icon-locked.png");
+}
+
+.servics-item-title {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 75px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.services-item-descr {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab";
+  color: var(--color-subcontent);
+}
+
+
+
+
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
 }
