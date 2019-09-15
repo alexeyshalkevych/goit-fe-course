@@ -1,0 +1,216 @@
+:root {
+  --font-all-content: "Roboto";
+  --font-title: "Montserrat";
+  --color-content: rgb(51, 51, 51);
+  --color-subcontent: rgb(102, 102, 102);
+  --color-style: rgb(255, 78, 80);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--font-all-content), sans-serif;
+  font-size: 14px;
+  color: var(--color-content);
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.button {
+  font-family: var(--font-title), sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* -----STYLE SECTION PROMO----- */
+
+.promo {
+  padding-bottom: 140px;
+  text-align: center;
+  background-image: url(../img/background-mobile.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  padding: 20px 0 30px;
+}
+
+/* -----NAVIGGATION----- */
+
+.button-log-in,
+.button-sign-up {
+  width: 90px;
+  height: 40px;
+  margin-bottom: 116px;
+}
+
+.button-log-in:hover,
+.button-log-in:focus,
+.button-sign-up:hover,
+.button-sign-up:focus {
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.logo-link {
+  display: block;
+  font-family: var(--font-title), sans-serif;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.promo-title {
+  margin: 0 -20px 16px;
+  padding: 0;
+  font-family: var(--font-title), sans-serif;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.promo-descr {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font-family: var(--font-all-content), sans-serif;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+}
+
+.button-promo {
+  width: 280px;
+  height: 40px;
+  background-color: var(--color-style);
+}
+
+.button-promo:hover,
+.button-promo:focus {
+}
+
+/* -----STYLE SECTION PARTNERS----- */
+
+.partners {
+  padding: 22px 0 58px;
+  text-align: center;
+}
+
+.partners-title {
+  margin: 0;
+  margin-bottom: 22px;
+  padding: 0;
+  font-size: 22px;
+  font-family: var(--font-title), sans-serif;
+  font-weight: 700;
+}
+
+.partners-list {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.partners-list-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.partners-list-item:last-child {
+  margin-bottom: 0;
+}
+
+.partners-list-item::after {
+  position: absolute;
+  top: 42%;
+  right: 28%;
+  display: block;
+  content: "";
+  width: 36px;
+  height: 36px;
+  background-repeat: no-repeat;
+  border: 4px solid rgb(255, 255, 255);
+  border-radius: 50%;
+}
+
+.partners-icon-tv::after {
+  background-color: var(--color-style);
+  background-image: url("../img/partners/partners-icons/icon-tv.png");
+  background-position: 45% 45%;
+}
+
+.partners-icon-flask::after {
+  background-color: rgb(255, 165, 7);
+  background-image: url("../img/partners/partners-icons/icon-flask.png");
+  background-position: 48% 45%;
+}
+
+.partners-icon-coffe::after {
+  background-color: rgb(28, 215, 173);
+  background-image: url("../img/partners/partners-icons/icon-coffe.png");
+  background-position: 45% 42%;
+}
+
+.partners-icon-telegram::after {
+  background-color: rgb(78, 115, 219);
+  background-image: url("../img/partners/partners-icons/icon-telegram.png");
+  background-position: 38% 50%;
+}
+
+.partner-photo {
+  margin: 0 auto 20px;
+}
+
+.partner-list-title {
+  margin: 0;
+  margin-bottom: 14px;
+  padding: 0;
+  font-family: var(--font-title), sans-serif;
+  color: var(--color-content);
+  font-weight: 700;
+}
+
+.partner-list-descr {
+  margin: 0;
+  padding: 0 30px;
+  color: rgb(102, 102, 102);
+  font-weight: 300;
+}
+
+.button-partner {
+  width: 284px;
+  height: 40px;
+  color: var(--color-style);
+  border: 2px solid var(--color-style);
+}
