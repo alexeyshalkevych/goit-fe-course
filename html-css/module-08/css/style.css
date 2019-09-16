@@ -55,6 +55,7 @@ img {
 /* -----STYLE SECTION PROMO----- */
 
 .promo {
+  height: 100vh;
   padding-bottom: 140px;
   text-align: center;
   background-image: linear-gradient(
@@ -69,10 +70,15 @@ img {
 }
 
 .header {
-  padding: 20px 0 30px;
+  min-height: 90px;
 }
 
 /* -----NAVIGGATION----- */
+
+.navigattion {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
 
 .button-log-in,
 .button-sign-up {
@@ -167,7 +173,7 @@ img {
 /* -----STYLE SECTION PARTNERS----- */
 
 .partners {
-  padding: 22px 0 58px;
+  padding: 68px 0 58px;
   text-align: center;
 }
 

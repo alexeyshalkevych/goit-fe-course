@@ -1,6 +1,6 @@
 /* -----MEDIA QUEIRES----- */
 
-@media (min-width: 768px) {
+@media (min-width: 788px) {
   .container {
     width: 768px;
     padding: 0 40px;
@@ -11,11 +11,17 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: baseline;
+    padding-top: 40px;
+  }
+
+  .button-log-in,
+  .button-sign-up {
+    margin-bottom: 0;
   }
 
   .promo-title {
     font-size: 52px;
-    padding: 0 80px;
+    padding: 116px 80px 0;
   }
 
   .promo-descr {
@@ -101,14 +107,14 @@
   }
 }
 
-@media (min-width: 940px) {
+@media (min-width: 960px) {
   .container {
     width: 940px;
     padding: 0 20px;
   }
 
   .promo-title {
-    padding: 0 180px;
+    padding: 116px 180px 0;
   }
 
   .partners {
