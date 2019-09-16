@@ -14,6 +14,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  /* outline: 1px solid; */
 }
 
 body {
@@ -47,12 +48,21 @@ img {
   outline: none;
 }
 
+.active {
+  border: 2px solid rgb(255, 255, 255);
+}
+
 /* -----STYLE SECTION PROMO----- */
 
 .promo {
   padding-bottom: 140px;
   text-align: center;
-  background-image: url(../img/background-mobile.png);
+  background-image: linear-gradient(
+      0deg,
+      rgba(26, 25, 21, 0.255),
+      rgba(26, 25, 21, 0.255)
+    ),
+    url(../img/background.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -87,6 +97,13 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
+  animation: rotate-logo 2s linear;
+}
+
+@keyframes rotate-logo {
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .promo-title {
@@ -97,6 +114,17 @@ img {
   color: rgb(255, 255, 255);
   font-weight: 700;
   text-transform: uppercase;
+  animation: down 2s linear;
+}
+
+@keyframes down {
+  0% {
+    transform: translateY(-150%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
 }
 
 .promo-descr {
@@ -113,10 +141,27 @@ img {
   width: 280px;
   height: 40px;
   background-color: var(--color-style);
+  outline: none;
+  animation: up 2s linear;
+  transition: color 0.5s linear, background-color 0.5s linear,
+    border 0.5s linear, transform 0.5s linear;
 }
 
+@keyframes up {
+  0% {
+    transform: translateY(150%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
 .button-promo:hover,
 .button-promo:focus {
+  color: var(--color-style);
+  background-color: rgb(255, 255, 255);
+  border: 2px solid var(--color-style);
+  /* transform: scale(1.1); */
 }
 
 /* -----STYLE SECTION PARTNERS----- */
@@ -144,18 +189,17 @@ img {
 
 .partners-list-item {
   position: relative;
-  margin-bottom: 30px;
 }
 
-.partners-list-item:last-child {
-  margin-bottom: 0;
+.partner-photo {
+  margin: 0 auto 20px;
 }
 
-.partners-list-item::after {
+.icon::after {
   position: absolute;
-  top: 42%;
-  right: 28%;
-  display: block;
+  top: 85px;
+  right: 78px;
+  display: inline-block;
   content: "";
   width: 36px;
   height: 36px;
@@ -173,23 +217,19 @@ img {
 .partners-icon-flask::after {
   background-color: rgb(255, 165, 7);
   background-image: url("../img/partners/partners-icons/icon-flask.png");
-  background-position: 48% 45%;
+  background-position: 50% 45%;
 }
 
 .partners-icon-coffe::after {
   background-color: rgb(28, 215, 173);
   background-image: url("../img/partners/partners-icons/icon-coffe.png");
-  background-position: 45% 42%;
+  background-position: 45% 40%;
 }
 
 .partners-icon-telegram::after {
   background-color: rgb(78, 115, 219);
   background-image: url("../img/partners/partners-icons/icon-telegram.png");
-  background-position: 38% 50%;
-}
-
-.partner-photo {
-  margin: 0 auto 20px;
+  background-position: 38% 45%;
 }
 
 .partner-list-title {
@@ -213,4 +253,14 @@ img {
   height: 40px;
   color: var(--color-style);
   border: 2px solid var(--color-style);
+  transition: color 0.5s linear, background-color 0.5s linear,
+    border 0.5s linear, transform 0.5s linear;
+}
+
+.button-partner:hover,
+.button-partner:focus {
+  color: rgb(255, 255, 255);
+  background-color: var(--color-style);
+  border: none;
+  /* transform: scale(1.1); */
 }
