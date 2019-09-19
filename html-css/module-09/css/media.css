@@ -1,24 +1,16 @@
 /* -----MEDIA QUEIRES----- */
 
-@media (min-width: 788px) {
-  .container {
-    width: 768px;
-    padding: 0 40px;
-  }
 
-  .navigattion {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: baseline;
-    padding-top: 40px;
+@media (max-width: 575px) {
+  .icon::after {
+    right: 96px;
   }
+}
 
-  .button-log-in,
-  .button-sign-up {
+@media (min-width: 768px) {
+  .buttons {
     margin-bottom: 0;
   }
-
   .promo-title {
     font-size: 52px;
     padding: 116px 80px 0;
@@ -27,17 +19,6 @@
   .promo-descr {
     font-size: 24px;
     margin-bottom: 35px;
-  }
-
-  .partners-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 40px;
-  }
-
-  .partners-list-item {
-    width: 236px;
   }
 
   /* -----ANIMATION----- */
@@ -100,7 +81,7 @@
   }
 
   .icon::after {
-    right: 58px;
+    right: 110px;
   }
 
   .partner-list-descr {
@@ -108,16 +89,8 @@
   }
 }
 
-@media (min-width: 960px) {
-  .container {
-    width: 940px;
-    padding: 0 20px;
-  }
-
-  .promo-title {
-    padding: 116px 180px 0;
-  }
-
+@media (min-width: 940px) {
+  
   .partners {
     padding: 68px 0 74px;
     text-align: center;
@@ -127,31 +100,42 @@
     margin-bottom: 36px;
   }
 
-  .partners-list {
-    justify-content: space-between;
-  }
-
-  .partners-list-item {
-    width: 220px;
-  }
-
-  .partners-list-item:not(:nth-last-child(-n + 4)) {
+  .partners-card {
     margin-bottom: 30px;
   }
 
   .icon::after {
-    right: 48px;
+    right: 46px;
   }
 }
 
+@media (min-width: 340px) and  (max-width: 575px) {
+  .icon::after {
+    right: 124px;
+  }
+}
+
+@media (min-width: 940px) and (max-width: 1199px) {
+  .icon::after {
+    right: 108px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .icon::after {
+    right: 68px;
+  }
+} 
+
+
 @media (min-width: 320px) and (max-width: 767px) {
-  .partners-list-item:not(:last-child) {
+  .partners-card {
     margin-bottom: 30px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 939px) {
-  .partners-list-item:not(:nth-last-child(-n + 2)) {
+  .partners-card {
     margin-bottom: 30px;
   }
 }

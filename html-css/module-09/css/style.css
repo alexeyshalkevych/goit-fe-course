@@ -31,10 +31,9 @@ img {
   height: auto;
 }
 
-.container {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0 20px;
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .button {
@@ -70,7 +69,7 @@ img {
 }
 
 .header {
-  min-height: 90px;
+  min-height: 100px;
 }
 
 /* -----NAVIGGATION----- */
@@ -80,11 +79,14 @@ img {
   padding-bottom: 30px;
 }
 
+.buttons {
+  margin-bottom: 116px;
+}
+
 .button-log-in,
 .button-sign-up {
   width: 90px;
   height: 40px;
-  margin-bottom: 116px;
 }
 
 .button-log-in:hover,
@@ -113,7 +115,8 @@ img {
 }
 
 .promo-title {
-  margin: 0 -20px 16px;
+  margin: 0;
+  margin-bottom: 16px;
   padding: 0;
   font-family: var(--font-title), sans-serif;
   font-size: 30px;
@@ -137,6 +140,8 @@ img {
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
+  padding-left: 30px;
+  padding-right: 30px;
   font-family: var(--font-all-content), sans-serif;
   font-size: 18px;
   color: rgb(255, 255, 255);
@@ -162,6 +167,7 @@ img {
     transform: translateY(0%);
   }
 }
+
 .button-promo:hover,
 .button-promo:focus {
   color: var(--color-style);
@@ -186,14 +192,7 @@ img {
   font-weight: 700;
 }
 
-.partners-list {
-  margin: 0;
-  margin-bottom: 30px;
-  padding: 0;
-  list-style: none;
-}
-
-.partners-list-item {
+.partners-card {
   position: relative;
 }
 
@@ -204,7 +203,7 @@ img {
 .icon::after {
   position: absolute;
   top: 85px;
-  right: 78px;
+  right: 96px;
   display: inline-block;
   content: "";
   width: 36px;
@@ -249,7 +248,7 @@ img {
 
 .partner-list-descr {
   margin: 0;
-  padding: 0 30px;
+  padding: 0 20px;
   color: rgb(102, 102, 102);
   font-weight: 300;
 }
