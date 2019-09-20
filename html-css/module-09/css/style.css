@@ -115,7 +115,7 @@ img {
 }
 
 .promo-title {
-  margin: 0;
+  margin: 0 -5px;
   margin-bottom: 16px;
   padding: 0;
   font-family: var(--font-title), sans-serif;
@@ -139,7 +139,6 @@ img {
 .promo-descr {
   margin: 0;
   margin-bottom: 20px;
-  padding: 0;
   padding-left: 30px;
   padding-right: 30px;
   font-family: var(--font-all-content), sans-serif;
@@ -179,13 +178,14 @@ img {
 /* -----STYLE SECTION PARTNERS----- */
 
 .partners {
-  padding: 68px 0 58px;
+  padding-top: 68px;
+  padding-bottom: 58px;
   text-align: center;
 }
 
 .partners-title {
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 30px;
   padding: 0;
   font-size: 22px;
   font-family: var(--font-title), sans-serif;
@@ -203,7 +203,7 @@ img {
 .icon::after {
   position: absolute;
   top: 85px;
-  right: 96px;
+  right: 0;
   display: inline-block;
   content: "";
   width: 36px;

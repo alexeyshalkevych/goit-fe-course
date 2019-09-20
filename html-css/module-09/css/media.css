@@ -1,16 +1,10 @@
 /* -----MEDIA QUEIRES----- */
 
-
-@media (max-width: 575px) {
-  .icon::after {
-    right: 96px;
-  }
-}
-
 @media (min-width: 768px) {
   .buttons {
     margin-bottom: 0;
   }
+
   .promo-title {
     font-size: 52px;
     padding: 116px 80px 0;
@@ -23,19 +17,19 @@
 
   /* -----ANIMATION----- */
 
-  .partners-list-item:nth-of-type(1) {
+  .partners-card:nth-of-type(1) {
     order: 1;
     animation: left-right 2s linear;
   }
-  .partners-list-item:nth-of-type(2) {
+  .partners-card:nth-of-type(2) {
     order: 3;
     animation: up-down 2s linear;
   }
-  .partners-list-item:nth-of-type(3) {
+  .partners-card:nth-of-type(3) {
     order: 2;
     animation: down-up 2s linear;
   }
-  .partners-list-item:nth-of-type(4) {
+  .partners-card:nth-of-type(4) {
     order: 4;
     animation: right-left 2s linear;
   }
@@ -80,24 +74,14 @@
     }
   }
 
-  .icon::after {
-    right: 110px;
-  }
-
   .partner-list-descr {
     padding: 0 10px;
   }
 }
 
 @media (min-width: 940px) {
-  
   .partners {
     padding: 68px 0 74px;
-    text-align: center;
-  }
-
-  .partners-title {
-    margin-bottom: 36px;
   }
 
   .partners-card {
@@ -105,19 +89,45 @@
   }
 
   .icon::after {
+    right: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .promo-title {
+    font-size: 52px;
+    padding: 116px 260px 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .icon::after {
+    right: 82px;
+  }
+}
+
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .icon::after {
+    right: 190px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 939px) {
+  .icon::after {
+    right: 100px;
+  }
+}
+
+@media (min-width: 940px) and (max-width: 992px) {
+  .icon::after {
+    right: 110px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .icon::after {
     right: 46px;
-  }
-}
-
-@media (min-width: 340px) and  (max-width: 575px) {
-  .icon::after {
-    right: 124px;
-  }
-}
-
-@media (min-width: 940px) and (max-width: 1199px) {
-  .icon::after {
-    right: 108px;
   }
 }
 
@@ -125,8 +135,7 @@
   .icon::after {
     right: 68px;
   }
-} 
-
+}
 
 @media (min-width: 320px) and (max-width: 767px) {
   .partners-card {
@@ -134,7 +143,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 939px) {
+@media (min-width: 768px) {
   .partners-card {
     margin-bottom: 30px;
   }
