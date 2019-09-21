@@ -139,8 +139,8 @@ img {
 .promo-descr {
   margin: 0;
   margin-bottom: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 35px;
+  padding-right: 35px;
   font-family: var(--font-all-content), sans-serif;
   font-size: 18px;
   color: rgb(255, 255, 255);
@@ -172,7 +172,6 @@ img {
   color: var(--color-style);
   background-color: rgb(255, 255, 255);
   border: 2px solid var(--color-style);
-  /* transform: scale(1.1); */
 }
 
 /* -----STYLE SECTION PARTNERS----- */
@@ -267,5 +266,4 @@ img {
   color: rgb(255, 255, 255);
   background-color: var(--color-style);
   border: none;
-  /* transform: scale(1.1); */
 }
