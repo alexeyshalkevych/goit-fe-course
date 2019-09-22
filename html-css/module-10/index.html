@@ -28,36 +28,60 @@
           rel="stylesheet"
         />
         <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/media.css">
+        <link rel="stylesheet" href="css/media.css" />
         <title>Module-10</title>
       </head>
       <body>
-        <header class="header">
+        <div class="banner">
           <div class="container">
-            <nav class="navigation">
-              <div class="logo">
-                <a href="#" class="logo-link">MoGo</a>
-              </div>
-              <ul class="menu-list">
-                <li class="menu-list-item">
-                  <a href="#" class="menu-list-link">about</a>
-                </li>
-                <li class="menu-list-item">
-                  <a href="#" class="menu-list-link">service</a>
-                </li>
-                <li class="menu-list-item">
-                  <a href="#" class="menu-list-link">work</a>
-                </li>
-                <li class="menu-list-item">
-                  <a href="#" class="menu-list-link">blog</a>
-                </li>
-                <li class="menu-list-item">
-                  <a href="#" class="menu-list-link">contact</a>
-                </li>
-              </ul>
-            </nav>
+            <header class="header">
+              <nav class="navigation">
+                <div class="logo">
+                  <a href="#" class="logo-link">MoGo</a>
+                </div>
+                <ul class="menu-list">
+                  <li class="menu-list-item">
+                    <a href="#" class="menu-list-link">about</a>
+                  </li>
+                  <li class="menu-list-item">
+                    <a href="#" class="menu-list-link">service</a>
+                  </li>
+                  <li class="menu-list-item">
+                    <a href="#" class="menu-list-link">work</a>
+                  </li>
+                  <li class="menu-list-item">
+                    <a href="#" class="menu-list-link">blog</a>
+                  </li>
+                  <li class="menu-list-item">
+                    <a href="#" class="menu-list-link">contact</a>
+                  </li>
+                  <li class="menu-list-item">
+                    <a href="#" class="menu-list-link">
+                      <svg class="header-svg">
+                        <use
+                          href="img/header-icon/basket-icon.svg#header-basket"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="menu-list-item">
+                    <a href="#" class="menu-list-link">
+                      <svg class="header-svg">
+                        <use
+                          href="img/header-icon/search-icon.svg#header-search"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </header>
+            <p class="banner-subtitle">Creative template</p>
+            <h1 class="banner-title">Welcome to mogo</h1>
+            <button class="banner--btn">Learn more</button>
           </div>
-        </header>
+        </div>
+
         <main class="content">
           <section class="services">
             <div class="container">
@@ -136,9 +160,15 @@
                   <div class="team-hover-content team-matthew">
                     <ul class="team-hover-list">
                       <li class="team-hover-list-item">
-                        <a href="https://www.facebook.com" target="_blank" class="hover-list-item-link facebook-icon">
+                        <a
+                          href="https://www.facebook.com"
+                          target="_blank"
+                          class="hover-list-item-link facebook-icon"
+                        >
                           <svg class="icon-svg">
-                            <use href="img/social-icon/social-icon-sprite.svg#icon-facebook"></use>
+                            <use
+                              href="img/social-icon/social-icon-sprite.svg#icon-facebook"
+                            ></use>
                           </svg>
                         </a>
                       </li>
@@ -148,10 +178,12 @@
                           target="_blank"
                           class="hover-list-item-link twitter-icon"
                         >
-                        <svg class="icon-svg">
-                          <use href="img/social-icon/social-icon-sprite.svg#icon-twitter"></use>
-                        </svg>
-                      </a>
+                          <svg class="icon-svg">
+                            <use
+                              href="img/social-icon/social-icon-sprite.svg#icon-twitter"
+                            ></use>
+                          </svg>
+                        </a>
                       </li>
                       <li class="team-hover-list-item">
                         <a
@@ -159,10 +191,12 @@
                           target="_blank"
                           class="hover-list-item-link pinterest-icon"
                         >
-                        <svg class="icon-svg">
-                          <use href="img/social-icon/social-icon-sprite.svg#icon-pinterest"></use>
-                        </svg>
-                      </a>
+                          <svg class="icon-svg">
+                            <use
+                              href="img/social-icon/social-icon-sprite.svg#icon-pinterest"
+                            ></use>
+                          </svg>
+                        </a>
                       </li>
                       <li class="team-hover-list-item">
                         <a
@@ -170,16 +204,21 @@
                           target="_blank"
                           class="hover-list-item-link instagram-icon"
                         >
-                        <svg class="icon-svg">
-                          <use href="img/social-icon/social-icon-sprite.svg#icon-instagram"></use>
-                        </svg>
-                      </a>
+                          <svg class="icon-svg">
+                            <use
+                              href="img/social-icon/social-icon-sprite.svg#icon-instagram"
+                            ></use>
+                          </svg>
+                        </a>
                       </li>
                     </ul>
                   </div>
                   <img
                     class="team-picture"
-                    srcset="img/team-photo/team-matthew-min.png 380w, img/team-photo/team-matthew@2x-min.png 760w"
+                    srcset="
+                      img/team-photo/team-matthew-min.png    380w,
+                      img/team-photo/team-matthew@2x-min.png 760w
+                    "
                     sizes="380px"
                     src="img/team-photo/team-matthew-min.png"
                     alt="team-photo"
@@ -193,9 +232,15 @@
                   <div class="team-hover-content team-christopher">
                     <ul class="team-hover-list">
                       <li class="team-hover-list-item">
-                        <a href="https://www.facebook.com" target="_blank" class="hover-list-item-link facebook-icon">
+                        <a
+                          href="https://www.facebook.com"
+                          target="_blank"
+                          class="hover-list-item-link facebook-icon"
+                        >
                           <svg class="icon-svg">
-                            <use href="img/social-icon/social-icon-sprite.svg#icon-facebook"></use>
+                            <use
+                              href="img/social-icon/social-icon-sprite.svg#icon-facebook"
+                            ></use>
                           </svg>
                         </a>
                       </li>
@@ -205,10 +250,12 @@
                           target="_blank"
                           class="hover-list-item-link twitter-icon"
                         >
-                        <svg class="icon-svg">
-                          <use href="img/social-icon/social-icon-sprite.svg#icon-twitter"></use>
-                        </svg>
-                      </a>
+                          <svg class="icon-svg">
+                            <use
+                              href="img/social-icon/social-icon-sprite.svg#icon-twitter"
+                            ></use>
+                          </svg>
+                        </a>
                       </li>
                       <li class="team-hover-list-item">
                         <a
@@ -216,10 +263,12 @@
                           target="_blank"
                           class="hover-list-item-link pinterest-icon"
                         >
-                        <svg class="icon-svg">
-                          <use href="img/social-icon/social-icon-sprite.svg#icon-pinterest"></use>
-                        </svg>
-                      </a>
+                          <svg class="icon-svg">
+                            <use
+                              href="img/social-icon/social-icon-sprite.svg#icon-pinterest"
+                            ></use>
+                          </svg>
+                        </a>
                       </li>
                       <li class="team-hover-list-item">
                         <a
@@ -227,15 +276,20 @@
                           target="_blank"
                           class="hover-list-item-link instagram-icon"
                         >
-                        <svg class="icon-svg">
-                          <use href="img/social-icon/social-icon-sprite.svg#icon-instagram"></use>
-                        </svg>
-                      </a>
+                          <svg class="icon-svg">
+                            <use
+                              href="img/social-icon/social-icon-sprite.svg#icon-instagram"
+                            ></use>
+                          </svg>
+                        </a>
                       </li>
                     </ul>
                   </div>
                   <img
-                    srcset="img/team-photo/team-christopher-min.png 380w, img/team-photo/team-christopher@2x-min.png 760w"
+                    srcset="
+                      img/team-photo/team-christopher-min.png    380w,
+                      img/team-photo/team-christopher@2x-min.png 760w
+                    "
                     sizes="380px"
                     src="img/team-photo/team-christopher-min.png"
                     alt="team-photo"
@@ -252,9 +306,15 @@
                   <div class="team-hover-content team-michel">
                     <ul class="team-hover-list">
                       <li class="team-hover-list-item">
-                        <a href="https://www.facebook.com" target="_blank" class="hover-list-item-link facebook-icon">
+                        <a
+                          href="https://www.facebook.com"
+                          target="_blank"
+                          class="hover-list-item-link facebook-icon"
+                        >
                           <svg class="icon-svg">
-                            <use href="img/social-icon/social-icon-sprite.svg#icon-facebook"></use>
+                            <use
+                              href="img/social-icon/social-icon-sprite.svg#icon-facebook"
+                            ></use>
                           </svg>
                         </a>
                       </li>
@@ -264,10 +324,12 @@
                           target="_blank"
                           class="hover-list-item-link twitter-icon"
                         >
-                        <svg class="icon-svg">
-                          <use href="img/social-icon/social-icon-sprite.svg#icon-twitter"></use>
-                        </svg>
-                      </a>
+                          <svg class="icon-svg">
+                            <use
+                              href="img/social-icon/social-icon-sprite.svg#icon-twitter"
+                            ></use>
+                          </svg>
+                        </a>
                       </li>
                       <li class="team-hover-list-item">
                         <a
@@ -275,10 +337,12 @@
                           target="_blank"
                           class="hover-list-item-link pinterest-icon"
                         >
-                        <svg class="icon-svg">
-                          <use href="img/social-icon/social-icon-sprite.svg#icon-pinterest"></use>
-                        </svg>
-                      </a>
+                          <svg class="icon-svg">
+                            <use
+                              href="img/social-icon/social-icon-sprite.svg#icon-pinterest"
+                            ></use>
+                          </svg>
+                        </a>
                       </li>
                       <li class="team-hover-list-item">
                         <a
@@ -286,15 +350,20 @@
                           target="_blank"
                           class="hover-list-item-link instagram-icon"
                         >
-                        <svg class="icon-svg">
-                          <use href="img/social-icon/social-icon-sprite.svg#icon-instagram"></use>
-                        </svg>
-                      </a>
+                          <svg class="icon-svg">
+                            <use
+                              href="img/social-icon/social-icon-sprite.svg#icon-instagram"
+                            ></use>
+                          </svg>
+                        </a>
                       </li>
                     </ul>
                   </div>
                   <img
-                    srcset="img/team-photo/team-michel-min.png 380w, img/team-photo/team-michel@2x-min.png 760w"
+                    srcset="
+                      img/team-photo/team-michel-min.png    380w,
+                      img/team-photo/team-michel@2x-min.png 760w
+                    "
                     sizes="380px"
                     src="img/team-photo/team-michel-min.png"
                     alt="team-photo"
