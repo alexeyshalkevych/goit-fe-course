@@ -66,7 +66,7 @@ img {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   line-height: 17px;
-  font-weight: 400;
+  font-weight: 700;
   color: rgb(51, 51, 51);
   text-transform: uppercase;
 }
@@ -175,39 +175,36 @@ img {
   left: 30px;
   content: "";
   width: 32px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .icon-service-photography::before {
   height: 31px;
-  background-image: url(../img/service-icons/service-photography.png);
+  background-image: url(../img/service-icons/service-photography.svg);
 }
 
 .icon-service-web::before {
   height: 32px;
-  background-image: url(../img/service-icons/service-web.png);
+  background-image: url(../img/service-icons/service-web.svg);
 }
 
 .icon-service-creative::before {
   height: 28px;
-  background-image: url(../img/service-icons/service-creative.png);
+  background-image: url(../img/service-icons/service-creative.svg);
 }
 
 .icon-service-seo::before {
   height: 32px;
-  background-image: url(../img/service-icons/service-seo.png);
+  background-image: url(../img/service-icons/service-seo.svg);
 }
 
 .icon-service-css-html::before {
   height: 31px;
-  background-image: url(../img/service-icons/service-css-html.png);
+  background-image: url(../img/service-icons/service-css-html.svg);
 }
 
 .icon-service-digital::before {
   height: 32px;
-  background-image: url(../img/service-icons/service-digital.png);
+  background-image: url(../img/service-icons/service-digital.svg);
 }
 
 .services-item-title {
