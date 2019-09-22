@@ -1,0 +1,15 @@
+/* --------MEDIA QUEIRES-------- */
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .team-matthew {
+    background-image: url("../img/team-photo/team-matthew@2x-min.png");
+  }
+
+  .team-christopher {
+    background-image: url("../img/team-photo/team-christopher@2x-min.png");
+  }
+
+  .team-michel {
+    background-image: url("../img/team-photo/team-michel@2x-min.png");
+  }
+}
