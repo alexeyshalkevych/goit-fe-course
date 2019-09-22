@@ -109,7 +109,7 @@ img {
 
 .menu-list-link {
   display: block;
-  padding-bottom: 10px; 
+  padding-bottom: 10px;
   font-family: "Montserrat", sans-serif;
   color: rgb(149, 225, 211);
   font-size: 14px;
@@ -256,7 +256,6 @@ img {
   }
 }
 
-
 .team-content-list-item {
   position: relative;
   transition: box-shadow 200ms linear;
@@ -327,6 +326,8 @@ img {
       rgba(243, 129, 129, 0.9) 100%
     ),
     url("../img/team-photo/team-matthew-min.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .team-christopher {
@@ -336,6 +337,8 @@ img {
       rgba(243, 129, 129, 0.9) 100%
     ),
     url("../img/team-photo/team-christopher-min.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .team-michel {
@@ -345,6 +348,8 @@ img {
       rgba(243, 129, 129, 0.9) 100%
     ),
     url("../img/team-photo/team-michel-min.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .team-hover-list {
@@ -369,12 +374,21 @@ img {
 
 .hover-list-item-link {
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 56px;
   height: 56px;
   background-color: rgb(252, 227, 138);
   border: none;
-  transition: background-color 200ms linear;
+  transition: background-color 200ms linear, fill 200ms linear;
+}
+
+.icon-svg {
+  display: block;
+  width: 32px;
+  height: 32px;
+  fill: rgb(243, 129, 129);
+  transition: fill 200ms linear;
 }
 
 .hover-list-item-link:hover,
@@ -382,36 +396,9 @@ img {
   background-color: rgb(149, 225, 211);
 }
 
-.hover-list-item-link::before {
-  display: block;
-  content: "";
-  margin: 0 auto;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.facebook-icon::before {
-  width: 13px;
-  height: 26px;
-  background-image: url(../img/social-icon/facebook.png);
-}
-
-.twitter-icon::before {
-  width: 26px;
-  height: 26px;
-  background-image: url(../img/social-icon/twitter.png);
-}
-
-.pinterest-icon::before {
-  width: 21px;
-  height: 26px;
-  background-image: url(../img/social-icon/pinterest.png);
-}
-
-.instagram-icon::before {
-  width: 26px;
-  height: 22px;
-  background-image: url(../img/social-icon/instagram.png);
+.hover-list-item-link:hover .icon-svg,
+.hover-list-item-link:focus .icon-svg {
+  fill: rgb(255, 255, 255);
 }
 
 /* -----FOOTER STYLE----- */

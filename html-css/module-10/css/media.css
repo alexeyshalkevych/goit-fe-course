@@ -2,14 +2,29 @@
 
 @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .team-matthew {
-    background-image: url("../img/team-photo/team-matthew@2x-min.png");
+    background-image: linear-gradient(
+        0deg,
+        rgba(252, 227, 138, 0.9) 0%,
+        rgba(243, 129, 129, 0.9) 100%
+      ),
+      url("../img/team-photo/team-matthew@2x-min.png");
   }
 
   .team-christopher {
-    background-image: url("../img/team-photo/team-christopher@2x-min.png");
+    background-image: linear-gradient(
+        0deg,
+        rgba(252, 227, 138, 0.9) 0%,
+        rgba(243, 129, 129, 0.9) 100%
+      ),
+      url("../img/team-photo/team-christopher@2x-min.png");
   }
 
   .team-michel {
-    background-image: url("../img/team-photo/team-michel@2x-min.png");
+    background-image: linear-gradient(
+        0deg,
+        rgba(252, 227, 138, 0.9) 0%,
+        rgba(243, 129, 129, 0.9) 100%
+      ),
+      url("../img/team-photo/team-michel@2x-min.png");
   }
 }
