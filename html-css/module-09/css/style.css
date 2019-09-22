@@ -54,7 +54,7 @@ img {
 /* -----STYLE SECTION PROMO----- */
 
 .promo {
-  height: 100vh;
+  /* height: 100vh; */
   padding-bottom: 140px;
   text-align: center;
   background-image: linear-gradient(
