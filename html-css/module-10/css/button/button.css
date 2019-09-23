@@ -1,0 +1,76 @@
+.btn {
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+  font-family: var(--font-title), sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-subcontent);
+  text-align: center;
+  background-color: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+}
+
+.banner__btn {
+  width: 164px;
+  height: 44px;
+  border: 3px solid var(--color-subcontent);
+  -webkit-transition: color 200ms linear, background-color 200ms linear,
+    text-shadow 200ms linear, border 200ms linear,
+    -webkit-box-shadow 200ms linear;
+  transition: color 200ms linear, background-color 200ms linear,
+    text-shadow 200ms linear, border 200ms linear,
+    -webkit-box-shadow 200ms linear;
+  -o-transition: color 200ms linear, background-color 200ms linear,
+    box-shadow 200ms linear, text-shadow 200ms linear, border 200ms linear;
+  transition: color 200ms linear, background-color 200ms linear,
+    box-shadow 200ms linear, text-shadow 200ms linear, border 200ms linear;
+  transition: color 200ms linear, background-color 200ms linear,
+    box-shadow 200ms linear, text-shadow 200ms linear, border 200ms linear,
+    -webkit-box-shadow 200ms linear;
+}
+
+.banner__btn:hover,
+.banner__btn:focus {
+  color: var(--color-subcontent);
+  text-shadow: 0 0 2px var(--color-subcontent);
+  background-color: var(--bcg-color-decor);
+  border: none;
+  -webkit-box-shadow: 0 0 5px var(--bcg-color-decor),
+    0 0 10px var(--bcg-color-decor), 0 0 15px var(--bcg-color-decor);
+  box-shadow: 0 0 5px var(--bcg-color-decor), 0 0 10px var(--bcg-color-decor),
+    0 0 15px var(--bcg-color-decor);
+}
+
+
+.footer-input__button {
+  margin: 0;
+  width: 150px;
+  height: 40px;
+  background-color: rgb(149, 225, 211);
+  -webkit-transition: color 200ms linear, background-color 200ms linear,
+    text-shadow 200ms linear, -webkit-box-shadow 200ms linear;
+  transition: color 200ms linear, background-color 200ms linear,
+    text-shadow 200ms linear, -webkit-box-shadow 200ms linear;
+  -o-transition: color 200ms linear, background-color 200ms linear,
+    box-shadow 200ms linear, text-shadow 200ms linear;
+  transition: color 200ms linear, background-color 200ms linear,
+    box-shadow 200ms linear, text-shadow 200ms linear;
+  transition: color 200ms linear, background-color 200ms linear,
+    box-shadow 200ms linear, text-shadow 200ms linear,
+    -webkit-box-shadow 200ms linear;
+}
+
+.footer-input__button:hover,
+.footer-input__button:focus {
+  color: var(--color-subcontent);
+  text-shadow: 0 0 2px var(--color-subcontent);
+  background-color: var(--bcg-color-decor);
+  -webkit-box-shadow: 0 0 5px var(--bcg-color-decor),
+    0 0 10px var(--bcg-color-decor), 0 0 15px var(--bcg-color-decor);
+  box-shadow: 0 0 5px var(--bcg-color-decor), 0 0 10px var(--bcg-color-decor),
+    0 0 15px var(--bcg-color-decor);
+  cursor: pointer;
+}

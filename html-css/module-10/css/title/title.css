@@ -1,0 +1,67 @@
+.section-pretitle {
+  margin: 0;
+  margin-bottom: 18px;
+  padding: 0;
+  font-family: var(--font-pretitle), cursive;
+  color: var(--color-content);
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-align: center;
+}
+
+.section-title {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-title), sans-serif;
+  color: var(--color-content);
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section__title--shape::after {
+  display: block;
+  content: "";
+  margin: 40px auto 0;
+  width: 60px;
+  height: 3px;
+  background-color: var(--bcg-color-decor);
+}
+
+.item-title {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-title), sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  color: var(--color-content);
+  text-transform: uppercase;
+}
+
+.banner__subtitle {
+  margin-bottom: 0;
+  padding-bottom: 36px;
+  padding-top: 164px;
+  font-size: 72px;
+  font-family: var(--font-pretitle), cursive;
+  color: var(--color-subcontent);
+}
+
+.banner__title {
+  padding: 0 100px 120px;
+  font-size: 150px;
+  line-height: 140px;
+  color: var(--color-subcontent);
+}
+
+.services__title {
+  margin-bottom: 65px;
+}
+
+.team__title {
+  margin-bottom: 42px;
+}

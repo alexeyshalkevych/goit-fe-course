@@ -1,0 +1,12 @@
+:root {
+  --font-all-content: "Roboto";
+  --font-title: "Montserrat";
+  --font-pretitle: "Kaushan Script";
+  --color-content: rgb(51, 51, 51);
+  --color-placeholder: rgb(204, 204, 204);
+  --color-subcontent: rgb(255, 255, 255);
+  --color-shadow: rgba(153, 153, 153, 0.5);
+  --bcg-color-decor: rgb(243, 129, 129);
+  --grad-color-first: rgba(243, 129, 129, 0.9);
+  --grad-color-second: rgba(252, 227, 138, 0.9);
+}

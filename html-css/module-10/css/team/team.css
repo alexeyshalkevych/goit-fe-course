@@ -1,0 +1,13 @@
+@import "../team-content/team-content.css";
+@import "../team-hover/team-hover.css";
+
+.team {
+  padding: 94px 0;
+  text-align: center;
+}
+
+.team__description {
+  margin: 0;
+  margin-bottom: 90px;
+  padding: 0 130px;
+}
