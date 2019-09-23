@@ -60,6 +60,17 @@ img {
   background-color: rgb(243, 129, 129);
 }
 
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+}
+
 .list-item-title {
   margin: 0;
   padding: 0;
@@ -86,7 +97,7 @@ img {
   background-size: cover;
 }
 
-.banner-subtitle {
+.banner__subtitle {
   margin: 0;
   padding: 0;
   padding-bottom: 36px;
@@ -98,7 +109,7 @@ img {
   text-align: center;
 }
 
-.banner-title {
+.banner__title {
   margin: 0;
   padding: 0 100px 120px;
   font-size: 150px;
@@ -110,7 +121,7 @@ img {
   text-transform: uppercase;
 }
 
-.banner--btn {
+.banner__btn {
   display: block;
   margin: 0 auto;
   width: 164px;
@@ -129,8 +140,8 @@ img {
     box-shadow 200ms linear, text-shadow 200ms linear, border 200ms linear;
 }
 
-.banner--btn:hover,
-.banner--btn:focus {
+.banner__btn:hover,
+.banner__btn:focus {
   color: rgb(255, 255, 255);
   text-shadow: 0 0 2px rgb(255, 255, 255);
   background-color: rgb(243, 129, 129);
@@ -142,49 +153,43 @@ img {
 
 /* -----HEADER STYLE----- */
 
-.header {
+.page-header {
   padding-top: 25px;
   min-height: 90px;
 }
 
-.navigation {
+.page-nav {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
 
-.logo-link {
-  display: block;
+.site-logo__link {
   font-family: "Montserrat", sans-serif;
   color: rgb(255, 255, 255);
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  text-decoration: none;
 }
 
-.header-svg {
+.site-navigation__svg {
   width: 18px;
   height: 18px;
   fill: rgb(255, 255, 255);
   transition: fill 200ms linear;
 }
 
-.menu-list {
+.site-navigation {
   display: flex;
   justify-content: space-between;
   flex-basis: 490px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
-.menu-list-item {
+.site-navigation__item {
   display: flex;
 }
 
-.menu-list-link {
-  display: block;
+.site-navigation__link {
   padding-bottom: 10px;
   font-family: "Montserrat", sans-serif;
   color: rgb(255, 255, 255);
@@ -193,19 +198,18 @@ img {
   font-weight: 400;
   border-bottom: 3px solid transparent;
   text-align: center;
-  text-decoration: none;
   text-transform: uppercase;
   transition: color 200ms linear;
 }
 
-.menu-list-link:hover,
-.menu-list-link:focus {
+.site-navigation__link:hover,
+.site-navigation__link:focus {
   color: rgb(252, 227, 138);
   border-bottom: 3px solid rgb(252, 227, 138);
 }
 
-.menu-list-link:hover .header-svg,
-.menu-list-link:focus .header-svg {
+.site-navigation__link:hover .site-navigation__svg,
+.site-navigation__link:focus .site-navigation__svg {
   fill: rgb(252, 227, 138);
 }
 
@@ -215,20 +219,17 @@ img {
   padding-top: 96px;
 }
 
-.services-section-title {
+.services__title {
   margin-bottom: 65px;
 }
 
-.services-content-list {
+.services-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
-.services-content-list-item {
+.services-content__item {
   position: relative;
   flex-basis: 382px;
   margin-bottom: 96px;
@@ -246,11 +247,11 @@ img {
   }
 }
 
-.services-content-list-item:nth-last-child(-n + 3) {
+.services-content__item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
 
-.services-content-list-item::before {
+.services-content__icon::before {
   position: absolute;
   top: 0;
   left: 30px;
@@ -258,41 +259,41 @@ img {
   width: 32px;
 }
 
-.icon-service-photography::before {
+.sevices-content__icon--photography::before {
   height: 31px;
   background-image: url(../img/service-icons/service-photography.svg);
 }
 
-.icon-service-web::before {
+.sevices-content__icon--web::before {
   height: 32px;
   background-image: url(../img/service-icons/service-web.svg);
 }
 
-.icon-service-creative::before {
+.sevices-content__icon--creative::before {
   height: 28px;
   background-image: url(../img/service-icons/service-creative.svg);
 }
 
-.icon-service-seo::before {
+.sevices-content__icon--seo::before {
   height: 32px;
   background-image: url(../img/service-icons/service-seo.svg);
 }
 
-.icon-service-css-html::before {
+.sevices-content__icon--css-html::before {
   height: 31px;
   background-image: url(../img/service-icons/service-css-html.svg);
 }
 
-.icon-service-digital::before {
+.sevices-content__icon--digital::before {
   height: 32px;
   background-image: url(../img/service-icons/service-digital.svg);
 }
 
-.services-item-title {
+.services-content__title {
   margin-bottom: 15px;
 }
 
-.services-item-title-descr {
+.services-content__description {
   margin: 0;
   padding: 0;
 }
@@ -303,24 +304,21 @@ img {
   padding: 94px 0;
 }
 
-.team-section-title {
+.team__title {
   margin-bottom: 42px;
 }
 
-.team-section-description {
+.team__description {
   margin: 0;
   margin-bottom: 90px;
   padding: 0 130px;
   text-align: center;
 }
 
-.team-content-list {
+.team-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  list-style: none;
   animation: team-animate 3s ease-in 1s reverse both;
 }
 
@@ -334,12 +332,12 @@ img {
   }
 }
 
-.team-content-list-item {
+.team-content__item {
   position: relative;
   transition: box-shadow 200ms linear;
 }
 
-.team-content-list-item:hover {
+.team-content__item:hover {
   box-shadow: 5px 5px 10px rgba(153, 153, 153, 0.5),
     -5px -5px 10px rgba(153, 153, 153, 0.5),
     -5px 5px 10px rgba(153, 153, 153, 0.5),
@@ -347,24 +345,24 @@ img {
   border-radius: 5px;
 }
 
-.team-content-list-item:hover .team-hover-content {
+.team-content__item:hover .team-content__hover {
   opacity: 1;
 }
 
-.team-picture {
+.team-content__picture {
   margin-bottom: 28px;
 }
 
-.team-content-list-item:hover .background-team-picture {
+.team-content__item:hover .team-content__background {
   opacity: 1;
 }
 
-.team-item-name {
+.team-content__name {
   margin-bottom: 10px;
   text-align: center;
 }
 
-.team-item-profession {
+.team-content__profession {
   margin: 0;
   padding: 0;
   font-style: italic;
@@ -374,7 +372,7 @@ img {
 
 /* -----TEAM CONTENT STYLE----- */
 
-.team-hover-content {
+.team-content__hover {
   position: absolute;
   top: -10px;
   left: -10px;
@@ -385,7 +383,7 @@ img {
   transition: opacity 200ms linear;
 }
 
-.background-team-picture {
+.team-content__background {
   position: absolute;
   top: 0;
   left: 0;
@@ -397,7 +395,7 @@ img {
   transition: opacity 200ms linear;
 }
 
-.team-matthew {
+.team-content__hover--matthew {
   background-image: linear-gradient(
       0deg,
       rgba(252, 227, 138, 0.9) 0%,
@@ -408,7 +406,7 @@ img {
   background-position: center;
 }
 
-.team-christopher {
+.team-content__hover--christopher {
   background-image: linear-gradient(
       0deg,
       rgba(252, 227, 138, 0.9) 0%,
@@ -419,7 +417,7 @@ img {
   background-position: center;
 }
 
-.team-michel {
+.team-content__hover--michel {
   background-image: linear-gradient(
       0deg,
       rgba(252, 227, 138, 0.9) 0%,
@@ -430,27 +428,24 @@ img {
   background-position: center;
 }
 
-.team-hover-list {
+.team-hover {
   display: flex;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
-.team-hover-list-item {
+.team-hover__item {
   display: flex;
   margin-right: 1px;
 }
 
-.team-hover-list-item:last-child {
+.team-hover__item:last-child {
   margin-right: 0;
 }
 
-.hover-list-item-link {
+.team-hover__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -461,7 +456,7 @@ img {
   transition: background-color 200ms linear, fill 200ms linear;
 }
 
-.icon-svg {
+.team-hover__link-svg {
   display: block;
   width: 32px;
   height: 32px;
@@ -469,19 +464,19 @@ img {
   transition: fill 200ms linear;
 }
 
-.hover-list-item-link:hover,
-.hover-list-item-link:focus {
+.team-hover__link:hover,
+.team-hover__link:focus {
   background-color: rgb(149, 225, 211);
 }
 
-.hover-list-item-link:hover .icon-svg,
-.hover-list-item-link:focus .icon-svg {
+.team-hover__link:hover .team-hover__link-svg,
+.team-hover__link:focus .team-hover__link-svg {
   fill: rgb(255, 255, 255);
 }
 
-/* -----FOOTER STYLE----- */
+/* ------------------------FOOTER STYLE--------------------------- */
 
-.footer {
+.page-footer {
   padding: 12px 0;
 }
 
@@ -493,12 +488,12 @@ img {
   border-top: 1px solid rgb(229, 229, 229);
 }
 
-.address {
+.footer-addres {
   display: flex;
   align-items: center;
 }
 
-.copyright {
+.footer-addres__copyright {
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -506,29 +501,27 @@ img {
   line-height: 17px;
 }
 
-.copyright::before {
+.footer-addres__copyright::before {
   content: "\00a9  ";
 }
 
-.design-project {
-  display: block;
+.footer-addres__link {
   margin: 0;
   padding-left: 2px;
   color: rgb(243, 129, 129);
   font-style: normal;
-  text-decoration: none;
 }
 
-.input-box {
+.footer-input {
   display: flex;
 }
 
-.input-email {
+.footer-input__email{
   padding-left: 12px;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   line-height: 26px;
-  color: rgb(204, 204, 204);
+  color: rgb(51, 51, 51);;
   font-style: italic;
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(231, 231, 231);
@@ -536,7 +529,7 @@ img {
   height: 40px;
 }
 
-.input-email::placeholder {
+.footer-input__email::placeholder {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   line-height: 26px;
@@ -544,7 +537,7 @@ img {
   font-style: italic;
 }
 
-.subscribe {
+.footer-input__button {
   width: 150px;
   height: 40px;
   font-family: "Montserrat", sans-serif;
@@ -560,7 +553,8 @@ img {
     box-shadow 200ms linear, text-shadow 200ms linear;
 }
 
-.subscribe:hover {
+.footer-input__button:hover, 
+.footer-input__button:focus {
   color: rgb(255, 255, 255);
   text-shadow: 0 0 2px rgb(255, 255, 255);
   background-color: rgb(243, 129, 129);
