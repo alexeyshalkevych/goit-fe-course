@@ -74,8 +74,7 @@ img {
 /* -----BANNER STYLE----- */
 
 .banner {
-  width: 100%;
-  height: 100vh;
+  padding-bottom: 230px;
   background-image: linear-gradient(
       180deg,
       rgba(243, 129, 129, 0.9),
@@ -85,6 +84,60 @@ img {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+
+.banner-subtitle {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 36px;
+  padding-top: 164px;
+  font-size: 72px;
+  font-family: "Kaushan Script";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.banner-title {
+  margin: 0;
+  padding: 0 100px 120px;
+  font-size: 150px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  line-height: 140px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.banner--btn {
+  display: block;
+  margin: 0 auto;
+  width: 164px;
+  height: 44px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background-color: transparent;
+  border: 3px solid rgb(255, 255, 255);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 200ms linear, background-color 200ms linear,
+    box-shadow 200ms linear, text-shadow 200ms linear, border 200ms linear;
+}
+
+.banner--btn:hover,
+.banner--btn:focus {
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 2px rgb(255, 255, 255);
+  background-color: rgb(243, 129, 129);
+  border: none;
+  box-shadow: 0 0 5px rgb(243, 129, 129), 0 0 10px rgb(243, 129, 129),
+    0 0 15px rgb(243, 129, 129);
+  cursor: pointer;
 }
 
 /* -----HEADER STYLE----- */
@@ -114,6 +167,7 @@ img {
   width: 18px;
   height: 18px;
   fill: rgb(255, 255, 255);
+  transition: fill 200ms linear;
 }
 
 .menu-list {
@@ -151,7 +205,7 @@ img {
 }
 
 .menu-list-link:hover .header-svg,
-.menu-list-link:focus .header-svg{
+.menu-list-link:focus .header-svg {
   fill: rgb(252, 227, 138);
 }
 
@@ -162,7 +216,7 @@ img {
 }
 
 .services-section-title {
-  margin-bottom: 106px;
+  margin-bottom: 65px;
 }
 
 .services-content-list {
@@ -250,7 +304,7 @@ img {
 }
 
 .team-section-title {
-  margin-bottom: 86px;
+  margin-bottom: 42px;
 }
 
 .team-section-description {
