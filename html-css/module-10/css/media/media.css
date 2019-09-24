@@ -23,7 +23,7 @@
       url("../../img/banner-image@2x-min.png");
   }
 
-  .team-matthew {
+  .team-content__hover--matthew {
     background-image: -webkit-gradient(
         linear,
         left bottom, left top,
@@ -45,7 +45,7 @@
       url("../../img/team-photo/team-matthew@2x-min.png");
   }
 
-  .team-christopher {
+  .team-content__hover--christopher {
     background-image: -webkit-gradient(
         linear,
         left bottom, left top,
@@ -67,7 +67,7 @@
       url("../../img/team-photo/team-christopher@2x-min.png");
   }
 
-  .team-michel {
+  .team-content__hover--michel {
     background-image: -webkit-gradient(
         linear,
         left bottom, left top,
