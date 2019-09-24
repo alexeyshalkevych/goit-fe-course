@@ -1,6 +1,103 @@
 /* --------MEDIA QUEIRES-------- */
 
-@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .banner {
+    background-image: -o-linear-gradient(
+        top,
+        var(--grad-color-first),
+        var(--grad-color-second)
+      ),
+      url("../../img/banner-image@2x-min.png");
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(var(--grad-color-first)),
+        to(var(--grad-color-second))
+      ),
+      url("../../img/banner-image@2x-min.png");
+    background-image: linear-gradient(
+        180deg,
+        var(--grad-color-first),
+        var(--grad-color-second)
+      ),
+      url("../../img/banner-image@2x-min.png");
+  }
+
+  .team-content__hover--matthew {
+    background-image: -o-linear-gradient(
+        bottom,
+        var(--grad-color-second) 0%,
+        var(--grad-color-first) 100%
+      ),
+      url("../../img/team-photo/team-matthew@2x-min.png");
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        from(var(--grad-color-second)),
+        to(var(--grad-color-first))
+      ),
+      url("../../img/team-photo/team-matthew@2x-min.png");
+    background-image: linear-gradient(
+        0deg,
+        var(--grad-color-second) 0%,
+        var(--grad-color-first) 100%
+      ),
+      url("../../img/team-photo/team-matthew@2x-min.png");
+  }
+
+  .team-content__hover--christopher {
+    background-image: -o-linear-gradient(
+        bottom,
+        var(--grad-color-second) 0%,
+        var(--grad-color-first) 100%
+      ),
+      url("../../img/team-photo/team-christopher@2x-min.png");
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        from(var(--grad-color-second)),
+        to(var(--grad-color-first))
+      ),
+      url("../../img/team-photo/team-christopher@2x-min.png");
+    background-image: linear-gradient(
+        0deg,
+        var(--grad-color-second) 0%,
+        var(--grad-color-first) 100%
+      ),
+      url("../../img/team-photo/team-christopher@2x-min.png");
+  }
+
+  .team-content__hover--michel {
+    background-image: -o-linear-gradient(
+        bottom,
+        var(--grad-color-second) 0%,
+        var(--grad-color-first) 100%
+      ),
+      url("../../img/team-photo/team-michel@2x-min.png");
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        from(var(--grad-color-second)),
+        to(var(--grad-color-first))
+      ),
+      url("../../img/team-photo/team-michel@2x-min.png");
+    background-image: linear-gradient(
+        0deg,
+        var(--grad-color-second) 0%,
+        var(--grad-color-first) 100%
+      ),
+      url("../../img/team-photo/team-michel@2x-min.png");
+  }
+}
+
+/* @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .banner {
     background-image: -webkit-gradient(
         linear,
@@ -89,4 +186,4 @@
       url("../../img/team-photo/team-michel@2x-min.png");
   }
   
-}
+} */
