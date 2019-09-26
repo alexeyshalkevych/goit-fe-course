@@ -1,14 +1,23 @@
 /*
    Import partials below
 */
-@import './base/fonts';
+@import './utils/variables';
+@import './utils/mixins';
+
 @import './normalize';
 
-.site-logo__link {
-  font-family: "Kaushan-Script", cursive;
-}
+@import './base/reset';
+@import './base/fonts';
 
-.banner__title {
-  font-family: "KaushanScript", cursive;
-}
+@import './layout/header';
+@import './layout/sections/services';
+@import './layout/sections/team.scss';
+@import './layout/footer';
 
+@import './components/container';
+@import './components/banner';
+@import './components/navigation';
+@import './components/button';
+@import './components/titles';
+@import './components/services-content';
+// @import './components/team-content';

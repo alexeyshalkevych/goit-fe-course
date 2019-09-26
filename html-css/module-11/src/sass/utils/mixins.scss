@@ -1,0 +1,5 @@
+// font-size and line-height properties
+@mixin size-height($fz, $lh) {
+  font-size: $fz;
+  line-height: $lh;
+}
