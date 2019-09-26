@@ -1,0 +1,87 @@
+link
+
+list
+
+section__title
+  section__title--shape
+
+section__pretitle
+
+content-item__title
+
+banner
+
+container
+
+page-header
+
+page-nav
+
+site-logo
+  site-logo__link
+
+site-navigation
+  site-navigation__item
+  site-navigation__link
+  site-navigation__svg
+
+  banner__subtitle
+  banner__title
+  banner__btn
+
+section services
+
+container
+
+  services__pretitle
+  services__title
+
+services-content
+  services-content__item
+  services-content__icon
+    sevices-content__icon--photography
+  services-content__title
+  services-content__description
+
+section team
+
+container
+
+  team__pretitle
+  team__title
+  team__description
+
+team-content
+  team-content__item
+  team-content__hover
+    team-content__hover--matthew
+team-hover
+  team-hover__item
+  team-hover__link
+    team-hover__link--facebook
+  team-hover__link-svg
+
+  team-content__picture
+  team-content__background
+  team-content__name
+  team-content__profession
+
+
+page-footer
+
+footer-content
+
+container
+
+footer-addres
+  footer-addres__copyright
+  footer-addres__link
+
+footer-input
+  footer-input__email
+  footer-input__button
+
+
+
+
+

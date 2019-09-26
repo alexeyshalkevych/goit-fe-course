@@ -1,0 +1,6 @@
+.link {
+  display: block;
+  font-family: var(--font-title), sans-serif;
+  line-height: 1.2;
+  text-decoration: none;
+}

@@ -1,0 +1,182 @@
+.team-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  animation: team-animate 3s ease-in 1s reverse both;
+}
+
+@-webkit-keyframes team-animate {
+  0% {
+    -webkit-transform: scaley(1);
+    transform: scaley(1);
+  }
+
+  100% {
+    -webkit-transform: scaley(0);
+    transform: scaley(0);
+  }
+}
+
+@keyframes team-animate {
+  0% {
+    -webkit-transform: scaley(1);
+    transform: scaley(1);
+  }
+
+  100% {
+    -webkit-transform: scaley(0);
+    transform: scaley(0);
+  }
+}
+
+.team-content__item {
+  position: relative;
+  -webkit-transition: -webkit-box-shadow 200ms linear;
+  transition: -webkit-box-shadow 200ms linear;
+  -o-transition: box-shadow 200ms linear;
+  transition: box-shadow 200ms linear;
+  transition: box-shadow 200ms linear, -webkit-box-shadow 200ms linear;
+}
+
+.team-content__item:hover {
+  -webkit-box-shadow: 5px 5px 10px var(--color-shadow),
+    -5px -5px 10px var(--color-shadow), -5px 5px 10px var(--color-shadow),
+    5px -5px 10px var(--color-shadow);
+  box-shadow: 5px 5px 10px var(--color-shadow),
+    -5px -5px 10px var(--color-shadow), -5px 5px 10px var(--color-shadow),
+    5px -5px 10px var(--color-shadow);
+  border-radius: 5px;
+}
+
+.team-content__item:hover .team-content__hover {
+  opacity: 1;
+}
+
+.team-content__picture {
+  margin-bottom: 28px;
+}
+
+.team-content__item:hover .team-content__background {
+  opacity: 1;
+}
+
+.team-content__name {
+  margin-bottom: 10px;
+}
+
+.team-content__profession {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-all-content), sans-serif;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+/* -----TEAM CONTENT STYLE----- */
+
+.team-content__hover {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  z-index: 10;
+  width: 380px;
+  height: 470px;
+  opacity: 0;
+  -webkit-transition: opacity 200ms linear;
+  -o-transition: opacity 200ms linear;
+  transition: opacity 200ms linear;
+}
+
+.team-content__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 380px;
+  height: 470px;
+  background-color: rgb(149, 225, 211);
+  opacity: 0;
+  -webkit-transition: opacity 200ms linear;
+  -o-transition: opacity 200ms linear;
+  transition: opacity 200ms linear;
+}
+
+.team-content__hover--matthew {
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(var(--grad-color-second)),
+      to(var(--grad-color-first))
+    ),
+    url("../../img/team-photo/team-matthew-min.png");
+  background-image: -o-linear-gradient(
+      bottom,
+      var(--grad-color-second) 0%,
+      var(--grad-color-first) 100%
+    ),
+    url("../../img/team-photo/team-matthew-min.png");
+  background-image: linear-gradient(
+      0deg,
+      var(--grad-color-second) 0%,
+      var(--grad-color-first) 100%
+    ),
+    url("../../img/team-photo/team-matthew-min.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.team-content__hover--christopher {
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(var(--grad-color-second)),
+      to(var(--grad-color-first))
+    ),
+    url("../../img/team-photo/team-christopher-min.png");
+  background-image: -o-linear-gradient(
+      bottom,
+      var(--grad-color-second) 0%,
+      var(--grad-color-first) 100%
+    ),
+    url("../../img/team-photo/team-christopher-min.png");
+  background-image: linear-gradient(
+      0deg,
+      var(--grad-color-second) 0%,
+      var(--grad-color-first) 100%
+    ),
+    url("../../img/team-photo/team-christopher-min.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.team-content__hover--michel {
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(var(--grad-color-second)),
+      to(var(--grad-color-first))
+    ),
+    url("../../img/team-photo/team-michel-min.png");
+  background-image: -o-linear-gradient(
+      bottom,
+      var(--grad-color-second) 0%,
+      var(--grad-color-first) 100%
+    ),
+    url("../../img/team-photo/team-michel-min.png");
+  background-image: linear-gradient(
+      0deg,
+      var(--grad-color-second) 0%,
+      var(--grad-color-first) 100%
+    ),
+    url("../../img/team-photo/team-michel-min.png");
+  background-size: cover;
+  background-position: center;
+}

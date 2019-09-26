@@ -1,0 +1,61 @@
+.team-hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.team-hover__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 1px;
+}
+
+.team-hover__item:last-child {
+  margin-right: 0;
+}
+
+.team-hover__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  background-color: rgb(252, 227, 138);
+  border: none;
+  -webkit-transition: background-color 200ms linear, fill 200ms linear;
+  -o-transition: background-color 200ms linear, fill 200ms linear;
+  transition: background-color 200ms linear, fill 200ms linear;
+}
+
+.team-hover__link-svg {
+  display: block;
+  width: 32px;
+  height: 32px;
+  fill: var(--bcg-color-decor);
+  -webkit-transition: fill 200ms linear;
+  -o-transition: fill 200ms linear;
+  transition: fill 200ms linear;
+}
+
+.team-hover__link:hover,
+.team-hover__link:focus {
+  background-color: rgb(149, 225, 211);
+}
+
+.team-hover__link:hover .team-hover__link-svg,
+.team-hover__link:focus .team-hover__link-svg {
+  fill: var(--color-subcontent);
+}
