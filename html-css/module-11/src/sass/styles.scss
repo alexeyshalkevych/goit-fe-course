@@ -1,4 +1,14 @@
 /*
    Import partials below
 */
+@import './base/fonts';
 @import './normalize';
+
+.site-logo__link {
+  font-family: "Kaushan-Script", cursive;
+}
+
+.banner__title {
+  font-family: "KaushanScript", cursive;
+}
+
