@@ -1,0 +1,109 @@
+.team-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  animation: team-animate 3s ease-in 1s reverse both;
+
+  &__item {
+    position: relative;
+    transition: box-shadow 200ms linear;
+  }
+
+  &__item:hover {
+    box-shadow: 5px 5px 10px $color-shadow, -5px -5px 10px $color-shadow,
+      -5px 5px 10px $color-shadow, 5px -5px 10px $color-shadow;
+    border-radius: 5px;
+  }
+
+  &__picture {
+    margin-bottom: 28px;
+  }
+
+  &__name {
+    margin-bottom: 10px;
+  }
+
+  &__profession {
+    margin: 0;
+    padding: 0;
+    font-family: $font-all-content, sans-serif;
+    font-style: italic;
+    text-transform: capitalize;
+  }
+
+  &__hover {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    z-index: 10;
+    width: 380px;
+    height: 470px;
+    opacity: 0;
+    transition: opacity 200ms linear;
+  }
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 380px;
+    height: 470px;
+    background-color: $color-decor-secondary;
+    opacity: 0;
+    transition: opacity 200ms linear;
+  }
+}
+
+@keyframes team-animate {
+  0% {
+    transform: scaley(1);
+  }
+
+  100% {
+    transform: scaley(0);
+  }
+}
+
+.team-content__item:hover .team-content__hover {
+  opacity: 1;
+}
+
+.team-content__item:hover .team-content__background {
+  opacity: 1;
+}
+
+/* -----TEAM CONTENT STYLE----- */
+
+.team-content__hover--matthew {
+  background-image: linear-gradient(
+      0deg,
+      $color-decor-first 0%,
+      $color-decor-third 100%
+    ),
+    url('../images/team-photo/team-matthew-min.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.team-content__hover--christopher {
+  background-image: linear-gradient(
+      0deg,
+      $color-decor-first 0%,
+      $color-decor-third 100%
+    ),
+    url('../images/team-photo/team-christopher-min.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.team-content__hover--michel {
+  background-image: linear-gradient(
+      0deg,
+      $color-decor-first 0%,
+      $color-decor-third 100%
+    ),
+    url('../images/team-photo/team-michel-min.png');
+  background-size: cover;
+  background-position: center;
+}

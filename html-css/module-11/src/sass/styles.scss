@@ -11,7 +11,9 @@
 
 @import './layout/header';
 @import './layout/sections/services';
-@import './layout/sections/team.scss';
+@import './layout/sections/team';
+@import './layout/sections/team-content';
+@import './layout/sections/team-hover';
 @import './layout/footer';
 
 @import './components/container';
