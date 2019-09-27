@@ -1,4 +1,5 @@
 .team-content {
+  @extend %list;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -40,6 +41,66 @@
     height: 470px;
     opacity: 0;
     transition: opacity 200ms linear;
+
+    &--matthew {
+      background-image: linear-gradient(
+          0deg,
+          $grad-color-first 0%,
+          $grad-color-second 100%
+        ),
+        url('../images/team-photo/team-matthew-min.png');
+      background-size: cover;
+      background-position: center;
+
+      @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            0deg,
+            $grad-color-first 0%,
+            $grad-color-second 100%
+          ),
+          url('../images/team-photo/team-matthew@2x-min.png');
+      }
+    }
+
+    &--christopher {
+      background-image: linear-gradient(
+          0deg,
+          $grad-color-first 0%,
+          $grad-color-second 100%
+        ),
+        url('../images/team-photo/team-christopher-min.png');
+      background-size: cover;
+      background-position: center;
+
+      @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            0deg,
+            $grad-color-first 0%,
+            $grad-color-second 100%
+          ),
+          url('../images/team-photo/team-christopher@2x-min.png');
+      }
+    }
+
+    &--michel {
+      background-image: linear-gradient(
+          0deg,
+          $grad-color-first 0%,
+          $grad-color-second 100%
+        ),
+        url('../images/team-photo/team-michel-min.png');
+      background-size: cover;
+      background-position: center;
+
+      @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            0deg,
+            $grad-color-first 0%,
+            $grad-color-second 100%
+          ),
+          url('../images/team-photo/team-michel@2x-min.png');
+      }
+    }
   }
 
   &__background {
@@ -57,11 +118,11 @@
 
 @keyframes team-animate {
   0% {
-    transform: scaley(1);
+    transform: scaleY(1);
   }
 
   100% {
-    transform: scaley(0);
+    transform: scaleY(0);
   }
 }
 
@@ -71,39 +132,4 @@
 
 .team-content__item:hover .team-content__background {
   opacity: 1;
-}
-
-/* -----TEAM CONTENT STYLE----- */
-
-.team-content__hover--matthew {
-  background-image: linear-gradient(
-      0deg,
-      $color-decor-first 0%,
-      $color-decor-third 100%
-    ),
-    url('../images/team-photo/team-matthew-min.png');
-  background-size: cover;
-  background-position: center;
-}
-
-.team-content__hover--christopher {
-  background-image: linear-gradient(
-      0deg,
-      $color-decor-first 0%,
-      $color-decor-third 100%
-    ),
-    url('../images/team-photo/team-christopher-min.png');
-  background-size: cover;
-  background-position: center;
-}
-
-.team-content__hover--michel {
-  background-image: linear-gradient(
-      0deg,
-      $color-decor-first 0%,
-      $color-decor-third 100%
-    ),
-    url('../images/team-photo/team-michel-min.png');
-  background-size: cover;
-  background-position: center;
 }

@@ -5,6 +5,8 @@
 }
 
 .site-logo__link {
+  @extend %link; 
+  font-family: $font-title, sans-serif;
   font-size: 30px;
   font-weight: 700;
   color: $color-subcontent;
@@ -18,6 +20,7 @@
 }
 
 .site-navigation {
+  @extend %list;
   display: flex;
   justify-content: space-between;
   flex-basis: 490px;
@@ -27,7 +30,9 @@
   }
 
   &__link {
+    @extend %link; 
     padding-bottom: 10px;
+    font-family: $font-title, sans-serif;
     font-size: 14px;
     font-weight: 400;
     color: $color-subcontent;

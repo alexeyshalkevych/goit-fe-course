@@ -2,15 +2,16 @@
    Import partials below
 */
 @import './utils/variables';
+@import './utils/placeholders';
 @import './utils/mixins';
 
-@import './normalize';
-
+@import './base/normalize';
 @import './base/reset';
 @import './base/fonts';
 
 @import './layout/header';
 @import './layout/sections/services';
+@import './layout/sections/services-content';
 @import './layout/sections/team';
 @import './layout/sections/team-content';
 @import './layout/sections/team-hover';
@@ -21,5 +22,3 @@
 @import './components/navigation';
 @import './components/button';
 @import './components/titles';
-@import './components/services-content';
-// @import './components/team-content';
