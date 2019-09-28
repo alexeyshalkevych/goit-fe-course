@@ -7,7 +7,7 @@
 .site-logo__link,
 .site-navigation__link {
   display: block;
-  font-family: var(--font-title), sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.2;
   text-decoration: none;
 }
@@ -465,7 +465,7 @@ img {
 .services-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .services-content__item {
