@@ -8,15 +8,15 @@
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+}
 
-  &--shape::after {
-    display: block;
-    content: "";
-    margin: 40px auto 0;
-    width: 60px;
-    height: 3px;
-    background-color: $color-decor-first;
-  }
+.section__title--shape::after {
+  display: block;
+  content: '';
+  margin: 40px auto 0;
+  width: 60px;
+  height: 3px;
+  background-color: $color-decor-first;
 }
 
 .section-pretitle {
@@ -25,8 +25,7 @@
   padding: 0;
   font-family: $font-pretitle;
   color: $color-all-content;
-  font-size: 24px;
-  line-height: 1.2;
+  @include size-height(24px, 1.2);
   font-weight: 400;
   text-align: center;
 }
@@ -35,8 +34,7 @@
   margin: 0;
   padding: 0;
   font-family: $font-title, sans-serif;
-  font-size: 14px;
-  line-height: 17px;
+  @include size-height(14px, 1.2);
   font-weight: 700;
   color: $color-all-content;
   text-transform: uppercase;
@@ -53,13 +51,16 @@
 
 .banner__title {
   padding: 0 100px 120px;
-  font-size: 150px;
-  line-height: 140px;
+  @include size-height(150px, 140px);
   color: $color-subcontent;
 }
 
 .services__title {
   margin-bottom: 65px;
+}
+
+.services-content__title {
+  margin-bottom: 15px;
 }
 
 .team__title {

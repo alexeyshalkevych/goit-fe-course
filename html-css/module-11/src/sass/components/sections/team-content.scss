@@ -14,6 +14,7 @@
     box-shadow: 5px 5px 10px $color-shadow, -5px -5px 10px $color-shadow,
       -5px 5px 10px $color-shadow, 5px -5px 10px $color-shadow;
     border-radius: 5px;
+    cursor: pointer;
   }
 
   &__picture {

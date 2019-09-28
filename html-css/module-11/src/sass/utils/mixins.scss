@@ -18,3 +18,15 @@
     align-items: center;
   }
 }
+
+// generate-pseudo-icon properties
+
+$icons: photography, web, creative, seo, css-html, digital;
+
+@mixin generate-pseudo-icon($baseClass, $list, $path, $text) {
+  @each $icon in $list {
+    .#{$baseClass}#{$icon}::before {
+      background-image: url(#{$path}#{$icon}.#{$text});
+    }
+  }
+}

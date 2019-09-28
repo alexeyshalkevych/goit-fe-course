@@ -47,9 +47,9 @@
     color: $color-decor-third;
     border-bottom: 3px solid $color-decor-third;
   }
-}
 
-.site-navigation__link:hover .site-navigation__svg,
-.site-navigation__link:focus .site-navigation__svg {
-  fill: $color-decor-third;
+  &__link:hover &__svg,
+  &__link:focus &__svg {
+    fill: $color-decor-third;
+  }
 }
